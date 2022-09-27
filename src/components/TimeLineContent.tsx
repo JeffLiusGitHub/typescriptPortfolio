@@ -7,7 +7,10 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
+import { LeftFly } from '../page/TimeLineAnimation';
+import { useInView } from 'react-intersection-observer';
 type Props = {
+  align?: string;
   date?: string;
   title?: string;
   mainContent?: string;
@@ -43,6 +46,7 @@ const TimeLineContent = ({
 
   const timeLineDotStyle = { backgroundColor: '#517693', fontSize: '3px' };
 
+  const { ref: leftRef, inView: leftIsVisable } = useInView();
   return (
     <TimelineItem>
       <TimelineOppositeContent
@@ -59,11 +63,13 @@ const TimeLineContent = ({
         <TimelineConnector sx={timeLineConnectorStyle} />
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }}>
-        <Typography variant="h6" component="span" sx={titleStyle}>
-          {title}
-        </Typography>
-        <Typography sx={contentStyle}>{mainContent}</Typography>
-        <Typography sx={contentStyle}>{subContent}</Typography>
+        <LeftFly isAnimated={leftIsVisable} ref={leftRef}>
+          <Typography variant="h6" component="span" sx={titleStyle}>
+            {title}
+          </Typography>
+          <Typography sx={contentStyle}>{mainContent}</Typography>
+          <Typography sx={contentStyle}>{subContent}</Typography>
+        </LeftFly>
       </TimelineContent>
     </TimelineItem>
   );

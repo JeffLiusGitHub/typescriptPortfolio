@@ -27,6 +27,7 @@ const TimeLine = (props: Props) => {
   const timeLineArray = [
     {
       id: 1,
+      align: 'right',
       date: 'Sep 2010 – Sep 2014',
       title: 'Education',
       mainContent: '❖ Bachelor of Electrical Engineering and Automation',
@@ -35,6 +36,7 @@ const TimeLine = (props: Props) => {
     },
     {
       id: 2,
+      align: 'left',
       date: 'Jul 2014 -Jul 2017',
       title: 'Experience',
       mainContent: '❖ JuneYao Airline (China)',
@@ -43,6 +45,7 @@ const TimeLine = (props: Props) => {
     },
     {
       id: 3,
+      align: 'right',
       date: 'Jul 2018 – Jul 2020',
       title: 'Education',
       mainContent: '❖ Master of Information Technology',
@@ -51,6 +54,7 @@ const TimeLine = (props: Props) => {
     },
     {
       id: 4,
+      align: 'left',
       date: 'Nov 2019 - Feb 2020',
       title: 'Internship',
       mainContent: '❖ Topsek Technology Ltd (Shanghai headquarter)',
@@ -59,6 +63,7 @@ const TimeLine = (props: Props) => {
     },
     {
       id: 5,
+      align: 'right',
       date: 'Nov 2020 – Oct 2021',
       title: 'Experience',
       mainContent: '❖ Ablink Pty Ltd (Australia)',
@@ -67,6 +72,7 @@ const TimeLine = (props: Props) => {
     },
     {
       id: 6,
+      align: 'left',
       date: 'Apr 2022 – June 2022',
       title: 'Experience',
       mainContent: '❖ Openpay Group Ltd (Australia)',
@@ -111,9 +117,11 @@ const TimeLine = (props: Props) => {
           }}
         >
           <Timeline position="alternate">
-            {timeLineArray.map((t, k) => (
+            {timeLineArray.map((t) => (
+              
               <TimeLineContent
-                key={k}
+                key={t.id}
+                align={t.align}
                 date={t.date}
                 title={t.title}
                 mainContent={t.mainContent}
