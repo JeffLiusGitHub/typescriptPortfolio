@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@layer base {
+  body {
+    @apply font-[VT323];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* * {
+  cursor: none;
+} */
+
+.cursor {
+  background-color: #84868a2f;
+  height: 32px;
+  width: 32px;
+  border: 5px solid #5cf6ff;
+  /* transform: translateY; */
+  transition: all 0.1s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+.cursor::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5px;
+  width: 10px;
+  background-color: #5cf6ff;
+}
+
+.MuiTypography-root {
+  color: pink;
+  font-weight: 500;
+  font-size: 100px;
 }
