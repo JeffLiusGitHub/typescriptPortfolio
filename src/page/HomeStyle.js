@@ -5,6 +5,8 @@ export const DeepBackgroundContainer = styled.div`
   background-color: grey;
   width: 100vw;
   height: 100vh;
+  z-index: 10000;
+  position: relative;
 `;
 
 export const BackgroundContainer = styled.div`
@@ -14,7 +16,7 @@ export const BackgroundContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: perspective(1500px) rotateY(352deg); */
+  z-index: 10000;
 `;
 
 export const InnerContainer = styled.div`

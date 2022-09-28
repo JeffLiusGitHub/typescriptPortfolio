@@ -29,11 +29,11 @@ const Home = (props: Props) => {
 
   return (
     <Element name="home">
-      {/* <motion.div
+      <motion.div
         className="cursor"
         variants={variants}
         animate={cursorVariant}
-      /> */}
+      />
       <DeepBackgroundContainer>
         <BackgroundContainer>
           <InnerContainer>

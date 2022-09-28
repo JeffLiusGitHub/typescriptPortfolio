@@ -15,9 +15,9 @@
   }
 }
 
-/* * {
+* {
   cursor: none;
-} */
+}
 
 .cursor {
   background-color: #84868a2f;
@@ -46,3 +46,5 @@
   font-weight: 500;
   font-size: 100px;
 }
+
+/* delete */
