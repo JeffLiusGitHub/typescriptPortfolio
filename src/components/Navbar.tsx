@@ -49,7 +49,7 @@ const Navbar = (Prop: Props) => {
   const handleOnClick = (): void => setOpenTab((prevTab) => !prevTab);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300 z-50">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300 z-1000" style={{zIndex:'1000000'}}>
       <img src={Logo} alt="logo image" style={{ width: '50px' }} />
 
       <ul className="hidden md:flex">
