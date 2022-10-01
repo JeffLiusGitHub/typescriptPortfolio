@@ -12,7 +12,7 @@ import { OuterLinkWrapper, OuterLinkText } from './OuterLinkStyle';
 import useMouse from './useMouse';
 type Props = {
   color: string;
-  url: string;
+  url: any;
   name: string;
   setHoverOutLink?: React.Dispatch<React.SetStateAction<boolean>>;
 
@@ -22,7 +22,7 @@ type Props = {
 const OuterLink = ({ color, url, name, children }: Props) => {
   return (
     <OuterLinkWrapper color={color}>
-      <OuterLinkText href={url}>
+      <OuterLinkText href={url} target="_blank" rel="noopener noreferrer">
         <>
           {name}
           {children}

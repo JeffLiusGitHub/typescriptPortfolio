@@ -13,6 +13,7 @@ import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll';
 import OuterLink from './OuterLink';
 import useMouse from './useMouse';
+// import JeffResume from '../../public/Jeff_Pdf_resume.pdf';
 type Props = {
   setHover?: React.Dispatch<React.SetStateAction<boolean>>;
 };
@@ -21,25 +22,25 @@ const Navbar = (Prop: Props) => {
   const outerLinkArray = [
     {
       color: 'rgb(59 130 246)',
-      url: '/linkedin',
+      url: 'https://linkedin.com/in/zexi-liu-0934841b3/',
       name: 'Linkedin',
       children: <FaLinkedin size={30} />,
     },
     {
       color: 'rgb(59 62 66)',
-      url: '/github',
+      url: 'https://Github.com/JeffLiusGitHub ',
       name: 'Github',
       children: <FaGithub size={30} />,
     },
     {
       color: 'rgb(111 194 176)',
-      url: '/mail',
+      url: 'mailto:jeffliu2802@hotmail.com',
       name: 'Mail',
       children: <HiOutlineMail size={30} />,
     },
     {
       color: 'rgb(88 95 105)',
-      url: '/resume',
+      url: '/Jeff_pdf_resume.pdf',
       name: 'Resume',
       children: <BsFillPersonLinesFill size={30} />,
     },
@@ -49,7 +50,10 @@ const Navbar = (Prop: Props) => {
   const handleOnClick = (): void => setOpenTab((prevTab) => !prevTab);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300 z-1000" style={{zIndex:'1000000'}}>
+    <div
+      className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300 z-1000"
+      style={{ zIndex: '1000000' }}
+    >
       <img src={Logo} alt="logo image" style={{ width: '50px' }} />
 
       <ul className="hidden md:flex">
@@ -144,6 +148,7 @@ const Navbar = (Prop: Props) => {
               {o.children}
             </OuterLink>
           ))}
+         
         </ul>
       </div>
     </div>

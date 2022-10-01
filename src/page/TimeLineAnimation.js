@@ -18,7 +18,10 @@ export const LeftFly = styled.div`
   animation-name: ${(props) => leftFlyin(props.isAnimated)};
 
   /* animation-name: ${leftFlyin}; */
-
+  /* &:hover {
+    scale: 1.1;
+    animation-duration: 7s;
+  } */
   transition-timing-function: ease-in-out;
 `;
 const rightFlyin = keyframes`

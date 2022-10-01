@@ -1,5 +1,6 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import { Link } from 'react-scroll';
 import avatarLight from '../assets/avatar_light.jpg';
 import avatar from '../assets/avatar.jpg';
 import styles from './Home.module.css';
@@ -22,18 +23,17 @@ import {
 } from './HomeStyle';
 import { motion } from 'framer-motion';
 import useMouse from '../components/useMouse';
-type Props = { hover?: boolean };
+type Props = {
+  hover?: ConstrainBooleanParameters;
+  textEnter: () => void;
+  textLeave: () => void;
+};
 import { Element } from 'react-scroll';
-const Home = (props: Props) => {
-  const { textEnter, textLeave, variants, cursorVariant } = useMouse();
+const Home = ({ textEnter, textLeave }: Props) => {
+  // const { textEnter, textLeave, variants, cursorVariant } = useMouse();
 
   return (
     <Element name="home">
-      <motion.div
-        className="cursor"
-        variants={variants}
-        animate={cursorVariant}
-      />
       <DeepBackgroundContainer>
         <BackgroundContainer>
           <InnerContainer>
@@ -51,9 +51,18 @@ const Home = (props: Props) => {
                 I'm a full-stack developer
               </Content>
               <ButtonContainer>
-                <CallToActionButton>
-                  view work<BlinkerCursor>_</BlinkerCursor>
-                </CallToActionButton>
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  <CallToActionButton>
+                    view work<BlinkerCursor>_</BlinkerCursor>
+                  </CallToActionButton>
+                </Link>
               </ButtonContainer>
             </LeftContainer>
             <RightContainer>

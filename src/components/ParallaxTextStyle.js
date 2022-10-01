@@ -8,9 +8,11 @@ export const Parallax = styled.div`
   white-space: nowrap;
   display: flex;
   flex-wrap: nowrap;
+  font-weight: 900;
+  font-size:100px;
 `;
 export const Scroller = styled.div`
-  font-weight: 600;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 64px;
   display: flex;

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-
+import wave from '../assets/wave.svg';
 export const BackgroundContainer = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: rgb(10 25 47);
   color: rgb(209 213 219);
   z-index: 1;
@@ -16,6 +16,7 @@ export const ParallaxPositiveContainer = styled.div`
   left: 50%;
   bottom: 50%;
   z-index: 1;
+  font-size: 900px;
 `;
 // export const ParallaxNegativeContainer = styled.div`
 //   position: absolute;
@@ -76,4 +77,15 @@ export const MainContentContainer = styled.div`
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
+`;
+
+export const Spacer = styled.div`
+  content: '';
+  /* aspect-ratio: 960/300; */
+  height: 435px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(${wave});
 `;

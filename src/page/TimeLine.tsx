@@ -81,7 +81,7 @@ const TimeLine = (props: Props) => {
     },
   ];
   const { ref: leftRef, inView: leftIsVisable } = useInView();
-  console.log(leftIsVisable);
+  // console.log(leftIsVisable);
 
   const theme = createTheme({
     typography: {
