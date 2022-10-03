@@ -132,7 +132,7 @@ const workArray = [
       'React-Intersection-Observer',
     ],
     gitUrl: 'https://github.com/JeffLiusGitHub/typescriptPortfolio',
-    link: 'localhost:3000',
+    link: 'https://portfolio-add7c.web.app/',
     desc: 'A web sport injury preventing web app inspired by once I falling down from the bike. Provide map route search, traffic knowledge education, quiz for traffic knowledge with explanations, common injuries illustration, 3D street view for most dangerous area, etc.',
   },
 ];

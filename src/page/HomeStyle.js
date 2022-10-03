@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import avatar from '../assets/avatar.jpg';
 import homeBackground from '../assets/HomeBackground.svg';
 // import ffflux from '../assets/ffflux.svg';
-import constellation from '../assets/constellation.svg'
+import constellation from '../assets/constellation.svg';
 export const DeepBackgroundContainer = styled.div`
   background-color: transparent;
   width: 100vw;
@@ -13,12 +13,10 @@ export const DeepBackgroundContainer = styled.div`
 
 export const BackgroundContainer = styled.div`
   background: url(${constellation});
-  
+
   background-repeat: repeat;
-  background-size:auto;
-  background-position:center;
-  
-  /* background-size: 100vw 100vh; */
+  background-size: auto;
+  background-position: center;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -53,6 +51,9 @@ export const RightContainer = styled.div`
   :hover {
     transform: perspective(1500px) rotateY(340deg);
   }
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -71,6 +72,7 @@ export const MainTitle = styled.p`
   line-height: 2.5rem;
   font-weight: 700;
   color: rgb(136 146 176);
+  margin-bottom: 40px;
 `;
 
 export const Content = styled.p`

@@ -12,11 +12,18 @@ export const BackgroundContainer = styled.div`
 export const ParallaxPositiveContainer = styled.div`
   position: absolute;
   transform: skew(0deg, -25deg) scaleY(1.33333) translate(-50%, -50%);
+  display: inline-block;
   opacity: 0.05;
   left: 50%;
-  bottom: 50%;
+  bottom: 40%;
   z-index: 1;
   font-size: 900px;
+  overflow-x: hidden;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  /* width: 50%; */
 `;
 // export const ParallaxNegativeContainer = styled.div`
 //   position: absolute;
@@ -41,6 +48,9 @@ export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
+  @media (min-width: 640px) {
+    padding: 10px;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -68,6 +78,11 @@ export const SecondLineContainer = styled.div`
   gap: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  @media (max-width: 640px) {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const ThirdLineContainer = styled.ul`

@@ -63,11 +63,6 @@ const About = ({ textEnter, textLeave }: Props) => {
               capacity.
             </p>
           </SecondLineContainer>
-          {/* <ThirdLineContainer>
-            {skillSetArray.map((s) => (
-              <SkillContainer key={s}>{s}</SkillContainer>
-            ))}
-          </ThirdLineContainer> */}
         </MainAboutContainer>
       </BackgroundContainer>
       <Spacer />

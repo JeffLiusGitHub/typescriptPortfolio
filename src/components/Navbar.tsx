@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-} from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/logo.png';
@@ -12,6 +7,11 @@ import { Link } from 'react-scroll';
 import OuterLink from './OuterLink';
 import NavItems from './NavItems';
 import NavItemMobile from './NavItemMobile';
+import {
+  NavBarContainer,
+  LogoContainer,
+  NavBarItemContainer,
+} from './NavbarStyle';
 
 type Props = {
   setHover?: React.Dispatch<React.SetStateAction<boolean>>;
@@ -50,10 +50,7 @@ const Navbar = (Prop: Props) => {
   const handleOnClick = (): void => setOpenTab((prevTab) => !prevTab);
 
   return (
-    <div
-      className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300 z-1000"
-      style={{ zIndex: '1000000', boxShadow: '2px 9px 35px -5px #000000' }}
-    >
+    <NavBarContainer>
       <Link
         activeClass="active"
         to={'home'}
@@ -62,14 +59,14 @@ const Navbar = (Prop: Props) => {
         offset={50}
         duration={500}
       >
-        <img src={Logo} alt="logo image" style={{ width: '50px' }} />
+        <LogoContainer>Jeff Liu</LogoContainer>
       </Link>
 
-      <ul className="hidden md:flex">
+      <NavBarItemContainer>
         {navItemsArray?.map((n) => (
-          <NavItems section={n} />
+          <NavItems key={n} section={n} />
         ))}
-      </ul>
+      </NavBarItemContainer>
 
       {/* hambuger */}
       <button onClick={handleOnClick} className="md:hidden z-10">
@@ -84,11 +81,11 @@ const Navbar = (Prop: Props) => {
         }
       >
         {navItemsArray.map((n) => (
-          <NavItemMobile section={n} />
+          <NavItemMobile key={n} section={n} setOpenTab={setOpenTab} />
         ))}
       </ul>
       {/* social  */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <div className=" lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           {outerLinkArray?.map((o) => (
             <OuterLink key={o.name} color={o.color} url={o.url} name={o.name}>
@@ -97,7 +94,7 @@ const Navbar = (Prop: Props) => {
           ))}
         </ul>
       </div>
-    </div>
+    </NavBarContainer>
   );
 };
 

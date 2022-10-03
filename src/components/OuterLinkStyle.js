@@ -9,7 +9,7 @@ export const OuterLinkWrapper = styled.li`
   margin-left: -100px;
   background-color: ${(props) => props.color};
   transition-duration: 300ms;
-  opacity: 0.7;
+  opacity: 0.5;
   :hover {
     transition-duration: 300ms;
     margin-left: -10px;

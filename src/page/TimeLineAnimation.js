@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
-
+import bottomWave from '../assets/bottomWave.svg';
 export const leftFlyin = (isAnimated) => keyframes`
  from {
     left: -30%;
@@ -17,11 +17,6 @@ export const LeftFly = styled.div`
 
   animation-name: ${(props) => leftFlyin(props.isAnimated)};
 
-  /* animation-name: ${leftFlyin}; */
-  /* &:hover {
-    scale: 1.1;
-    animation-duration: 7s;
-  } */
   transition-timing-function: ease-in-out;
 `;
 const rightFlyin = keyframes`
@@ -36,4 +31,14 @@ const rightFlyin = keyframes`
     left:100%;
     opacity:1;
   }
+`;
+export const Spacer = styled.div`
+  content: '';
+
+  height: 1133px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(${bottomWave});
 `;

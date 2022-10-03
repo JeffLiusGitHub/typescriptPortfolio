@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Dispatch, useState } from 'react';
 import { Link } from 'react-scroll';
 import { NavItemContainer } from './NavItemMobileStyle';
-type Props = { section: string };
+type Props = { section: string; setOpenTab: Dispatch<boolean> };
 
-const NavItemMobile = ({ section }: Props) => {
+const NavItemMobile = ({ section, setOpenTab }: Props) => {
   return (
     <Link
       activeClass="active"
@@ -20,6 +20,7 @@ const NavItemMobile = ({ section }: Props) => {
           fontSize: '2.25rem',
           lineHeight: '2.5rem',
         }}
+        onClick={() => setOpenTab(false)}
       >
         {section.toUpperCase()}
       </NavItemContainer>

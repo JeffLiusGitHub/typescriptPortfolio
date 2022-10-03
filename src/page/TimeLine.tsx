@@ -18,7 +18,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Element } from 'react-scroll';
-import { LeftFly } from './TimeLineAnimation';
+import { LeftFly, Spacer } from './TimeLineAnimation';
 import TimeLineContent from '../components/TimeLineContent';
 import { useInView } from 'react-intersection-observer';
 type Props = {};
@@ -89,26 +89,13 @@ const TimeLine = (props: Props) => {
       fontSize: 20,
     },
   });
-  const timeLineConnectorStyle = { color: 'E0D9F6', width: '6px' };
-  const titleStyle = {
-    color: '#ED5788',
-    textShadow:
-      '  0 0 30px #FF296D, 0 0 40px #FF296D, 0 0 50px #FF296D, 0 0 60px #FF296D',
-  };
-  const contentStyle = {
-    color: '#0BD9E8',
-    textShadow:
-      ' 0 0 20px #fff, 0 0 30px #005579, 0 0 40px #005579, 0 0 50px #005579, 0 0 60px #005579, 0 0 70px #005579',
-  };
-  const dateStyle = { margin: 'auto 0', color: '#302727B' };
 
-  const timeLineDotStyle = { backgroundColor: '#517693', fontSize: '3px' };
   return (
     <Element name="experience">
       <ThemeProvider theme={theme}>
         <div
           style={{
-            height: `calc(100%+130px)`,
+            height: 'calc(100% + 250px)',
             minHeight: '1200px',
             backgroundColor: '#000013',
             display: 'flex',
@@ -132,6 +119,7 @@ const TimeLine = (props: Props) => {
           </Timeline>
         </div>
       </ThemeProvider>
+      <Spacer />
     </Element>
   );
 };
