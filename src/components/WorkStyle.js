@@ -20,9 +20,9 @@ export const Project = styled.div`
 
 export const ProjectContent = styled.div`
   position: relative;
-  grid-column: 1 / 7;
+  grid-column: ${(props) => (props.id % 2 === 1 ? ' 1 / 7' : '6 / -1')};
   grid-row: 1 / -1;
-
+  text-align: ${(props) => (props.id % 2 === 1 ? 'left' : 'right')};
   @media (max-width: 600px) {
     grid-column: 1 / -1;
     padding: 40px;
@@ -32,55 +32,94 @@ export const ProjectContent = styled.div`
 `;
 
 export const ProjectLabel = styled.div`
-  color: #64ffda;
+  color: #db2778;
   font-family: monospace;
+  font-weight: bold;
+  font-size: 24px;
 `;
 
 export const ProjectTitle = styled.div`
   font-size: 2rem;
-  margin: 10px 0 30px;
+  margin: 5px 0;
   color: #eee;
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+  position: relative;
+  border-bottom:5px;
 `;
+
+export const GitIconContainer = styled.button`
+  display: flex;
+  justify-content: center;
+  grid-column: 5 / 6;
+  grid-row: 1 / 2;
+  align-items: center;
+  transition-duration: 500ms;
+  :hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+`;
+
+export const LinkIconContainer = styled.button`
+  display: flex;
+  justify-content: center;
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  align-items: center;
+  transition-duration: 500ms;
+  :hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+`;
+
 export const ProjectDetails = styled.div`
   font-size: 15px;
   line-height: 1.5;
   color: #aaa;
-
   z-index: 100;
   position: relative;
-  & > p {
-    background-color: #252525;
-    padding: 20px 25px;
-    z-index: 200;
-    @media (max-width: 600px) {
-      background-color: transparent;
-      padding: 20px 0;
-    }
-  }
-  & > ul {
-    display: flex;
-    margin-top: 20px;
-  }
   & > li {
     margin-right: 20px;
     color: #aaa;
     font-family: monospace;
   }
 `;
-// export const DescriptionContainer = styled.div`
-//   color: #aaa;
-//   background-color: #252525;
-//   padding: 20px 25px;
-// `;
+
+export const ProjectDescriptions = styled.div`
+  background-color: #252525;
+  padding: 20px 25px;
+  z-index: 200;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  :hover {
+    transform: scale(1.2);
+  }
+  @media (max-width: 600px) {
+    background-color: transparent;
+    padding: 20px 0;
+  }
+`;
+
+export const SkillContainer = styled.ul`
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: ${(props) => (props.id % 2 === 1 ? 'start' : 'end')};
+`;
+
 export const ProjectImg = styled.div`
   position: relative;
+  border-radius: 5px;
   z-index: 0;
   background-color: #64ffda;
   background: linear-gradient(0.4turn, #64ffda, #64ff8d);
   border-radius: 2px;
-  grid-column: 6 / -1;
   grid-row: 1 / -1;
-
+  grid-column: ${(props) => (props.id % 2 === 1 ? '6 / -1' : ' 1 / 7')};
+  border-radius: 10px;
   @media screen and (max-width: 768px) {
     height: 100%;
   }
@@ -88,7 +127,6 @@ export const ProjectImg = styled.div`
     grid-column: 1 / -1;
     opacity: 0.25;
   }
-
   &:before {
     content: '';
     position: absolute;
@@ -99,7 +137,7 @@ export const ProjectImg = styled.div`
     right: 0;
     bottom: 0;
     z-index: 1;
-    background-color: #0a192f;
+    background-color: #8a1e4e;
     mix-blend-mode: screen;
     border-radius: 2px;
   }
@@ -115,4 +153,12 @@ export const ProjectImg = styled.div`
       height: 100%;
     }
   }
+`;
+
+export const IconContainer = styled.div`
+  display: flex;
+  justify-content: ${(props) =>
+    props.id % 2 === 1 ? 'flex-start' : 'flex-end'};
+  margin: ${(props) =>
+    props.id % 2 === 1 ? '10px 0 0 10px' : '10px 10px 0 0'};
 `;

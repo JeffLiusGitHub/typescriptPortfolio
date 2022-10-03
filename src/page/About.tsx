@@ -10,11 +10,23 @@ import {
   Title,
   SecondLineContainer,
   MainContentContainer,
+  ThirdLineContainer,
+  SkillContainer,
   Spacer,
 } from './AboutStyle';
 type Props = { textEnter: () => void; textLeave: () => void };
 
 const About = ({ textEnter, textLeave }: Props) => {
+  const skillSetArray = [
+    'React',
+    'Typescript',
+    'Redux',
+    'Styled-Component',
+    'React Testing Library',
+    'Restful Api',
+    'Material UI',
+    'Node Js',
+  ];
   return (
     <Element name="about">
       <BackgroundContainer>
@@ -49,9 +61,14 @@ const About = ({ textEnter, textLeave }: Props) => {
               a software expert available at your fingertips?
             </p>
           </SecondLineContainer>
+          <ThirdLineContainer>
+            {skillSetArray.map((s) => (
+              <SkillContainer key={s}>{s}</SkillContainer>
+            ))}
+          </ThirdLineContainer>
         </MainAboutContainer>
-      
-      </BackgroundContainer>  <Spacer />
+      </BackgroundContainer>
+      <Spacer />
     </Element>
   );
 };

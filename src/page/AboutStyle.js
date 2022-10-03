@@ -70,6 +70,25 @@ export const SecondLineContainer = styled.div`
   padding-right: 1rem;
 `;
 
+export const ThirdLineContainer = styled.ul`
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const SkillContainer = styled.p`
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  &:before {
+    content: '▹';
+    position: absolute;
+    left: 0px;
+    line-height: 12px;
+  }
+`;
+
 export const MainContentContainer = styled.div`
   @media (min-width: 640px) {
     text-align: right;

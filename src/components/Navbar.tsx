@@ -12,6 +12,8 @@ import Logo from '../assets/logo.png';
 import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll';
 import OuterLink from './OuterLink';
+import NavItems from './NavItems';
+import NavItemMobile from './NavItemMobile';
 import useMouse from './useMouse';
 // import JeffResume from '../../public/Jeff_Pdf_resume.pdf';
 type Props = {
@@ -19,6 +21,14 @@ type Props = {
 };
 
 const Navbar = (Prop: Props) => {
+  const navItemsArray = [
+    'home',
+    'about',
+    'experience',
+    'skills',
+    'work',
+    'contract',
+  ];
   const outerLinkArray = [
     {
       color: 'rgb(59 130 246)',
@@ -54,71 +64,21 @@ const Navbar = (Prop: Props) => {
       className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300 z-1000"
       style={{ zIndex: '1000000' }}
     >
-      <img src={Logo} alt="logo image" style={{ width: '50px' }} />
+      <Link
+        activeClass="active"
+        to={'home'}
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
+        <img src={Logo} alt="logo image" style={{ width: '50px' }} />
+      </Link>
 
       <ul className="hidden md:flex">
-        <Link
-          activeClass="active"
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-        >
-          <li>HOME</li>
-        </Link>
-
-        <Link
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-        >
-          <li>ABOUT</li>
-        </Link>
-        <Link
-          activeClass="active"
-          to="experience"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-        >
-          <li>EXPERIENCE</li>
-        </Link>
-
-        <Link
-          activeClass="active"
-          to="skills"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-        >
-          <li>SKILLS</li>
-        </Link>
-        <Link
-          activeClass="active"
-          to="work"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-        >
-          <li>WORK</li>
-        </Link>
-        <Link
-          activeClass="active"
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-        >
-          <li>CONTACT</li>
-        </Link>
+        {navItemsArray?.map((n) => (
+          <NavItems section={n} />
+        ))}
       </ul>
 
       {/* hambuger */}
@@ -133,12 +93,9 @@ const Navbar = (Prop: Props) => {
             : 'hidden'
         }
       >
-        <li className="py-6 text-4xl ">HOME</li>
-        <li className="py-6 text-4xl ">ABOUT</li>
-        <li className="py-6 text-4xl ">EXPERIENCE</li>
-        <li className="py-6 text-4xl ">SKILLS</li>
-        <li className="py-6 text-4xl ">WORK</li>
-        <li className="py-6 text-4xl ">CONTACT</li>
+        {navItemsArray.map((n) => (
+          <NavItemMobile section={n} />
+        ))}
       </ul>
       {/* social  */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
@@ -148,7 +105,6 @@ const Navbar = (Prop: Props) => {
               {o.children}
             </OuterLink>
           ))}
-         
         </ul>
       </div>
     </div>
