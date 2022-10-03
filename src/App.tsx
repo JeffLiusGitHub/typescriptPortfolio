@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import About from './page/About';
 import Home from './page/Home';
 import Skills from './page/Skills';
+import Contract from './page/Contract';
 import TimeLine from './page/TimeLine';
 import Works from './page/Works';
 import { useState } from 'react';
@@ -26,6 +27,7 @@ function App() {
       <TimeLine />
       {/* <Skills /> */}
       <Works />
+      <Contract />
     </div>
   );
 }

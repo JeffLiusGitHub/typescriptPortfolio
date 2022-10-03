@@ -24,6 +24,7 @@ type Props = {
   technology: string[];
   gitUrl: string;
   link: string;
+  desc: string;
 };
 
 const Work = ({
@@ -34,6 +35,7 @@ const Work = ({
   technology,
   gitUrl,
   link,
+  desc,
 }: Props) => {
   return (
     <ProjectContainer>
@@ -43,13 +45,7 @@ const Work = ({
           <ProjectTitle id={id}>{title}</ProjectTitle>
           <ProjectDetails>
             <ProjectDescriptions>
-              <p>
-                you probably haven't heard of them bitters selvage listicle
-                heirloom. Locavore kombucha street art ennui 90's, organic food
-                truck hell of seitan skateboard literally hexagon fixie next
-                level. Lomo salvia yuccie hella roof party echo park vegan four
-                dollar toast cred.
-              </p>
+              <p>{desc}</p>
             </ProjectDescriptions>
             <div>
               <SkillContainer id={id}>

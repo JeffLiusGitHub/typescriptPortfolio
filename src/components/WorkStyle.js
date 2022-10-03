@@ -15,7 +15,6 @@ export const Project = styled.div`
 
   @media screen and (max-width: 768px) {
     align-items: flex-start;
-    
   }
 `;
 
@@ -141,8 +140,9 @@ export const ProjectImg = styled.div`
     right: 0;
     bottom: 0;
     z-index: 1;
-    background-color: #8a1e4e;
-    background: linear-gradient(0.4turn, #09321a, #64ff8d);
+    /* background-color: #8a1e4e; */
+    background: linear-gradient(0.4turn, #09321a, #db2978);
+    filter: grayscale(100%) contrast(1);
     mix-blend-mode: screen;
     border-radius: 2px;
   }
@@ -155,8 +155,9 @@ export const ProjectImg = styled.div`
     border-radius: 2px;
     position: relative;
     mix-blend-mode: multiply;
-    filter: grayscale(100%) contrast(1);
-
+    :hover {
+      transform: scale(1.1);
+    }
     @media screen and (max-width: 768px) {
       object-fit: cover;
       width: auto;

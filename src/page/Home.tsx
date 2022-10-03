@@ -48,12 +48,16 @@ const Home = ({ textEnter, textLeave }: Props) => {
                 I'm a full-stack developer
               </MainTitle>
               <Content onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                I'm a full-stack developer
+                I'm passion about all new technologies. So, I switch my career
+                from a aircraft engineer to a full-stack developer. I have stack
+                with React, Typescript, Redux, Styled-Component, React Testing
+                Library, Restful Api, Material UI and Node JS. If you can
+                directly view my work or browsing my experience.
               </Content>
               <ButtonContainer>
                 <Link
                   activeClass="active"
-                  to="about"
+                  to="work"
                   spy={true}
                   smooth={true}
                   offset={50}

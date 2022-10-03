@@ -21,14 +21,7 @@ type Props = {
 };
 
 const Navbar = (Prop: Props) => {
-  const navItemsArray = [
-    'home',
-    'about',
-    'experience',
-    'skills',
-    'work',
-    'contract',
-  ];
+  const navItemsArray = ['home', 'about', 'experience', 'work', 'contract'];
   const outerLinkArray = [
     {
       color: 'rgb(59 130 246)',
