@@ -18,6 +18,7 @@ import { BsGithub } from 'react-icons/bs';
 import { AiOutlineLink } from 'react-icons/ai';
 type Props = {
   id?: number;
+  img?: string;
   title: string;
   category: string;
   technology: string[];
@@ -25,7 +26,15 @@ type Props = {
   link: string;
 };
 
-const Work = ({ id, title, category, technology, gitUrl, link }: Props) => {
+const Work = ({
+  id,
+  img,
+  title,
+  category,
+  technology,
+  gitUrl,
+  link,
+}: Props) => {
   return (
     <ProjectContainer>
       <Project>
@@ -53,7 +62,7 @@ const Work = ({ id, title, category, technology, gitUrl, link }: Props) => {
               <GitIconContainer
                 href={gitUrl}
                 target="_blank"
-                style={{ marginRight: '15px' }}
+                style={{ marginRight: '35px' }}
                 rel="noopener noreferrer"
               >
                 <BsGithub size={25} />
@@ -69,10 +78,7 @@ const Work = ({ id, title, category, technology, gitUrl, link }: Props) => {
           </ProjectDetails>
         </ProjectContent>
         <ProjectImg id={id}>
-          <img
-            src="https://cdn.vox-cdn.com/thumbor/w-IFN0FWpN4BGfhZaV9EYqs4nLo=/51x0:977x617/1200x800/filters:focal(51x0:977x617)/cdn.vox-cdn.com/uploads/chorus_image/image/50017015/Screen_Shot_2016-07-04_at_12.37.15_PM.0.0.png"
-            alt=""
-          />
+          <img src={`/work/${img}.png`} alt={title} />
         </ProjectImg>
       </Project>
     </ProjectContainer>

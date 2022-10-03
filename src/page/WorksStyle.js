@@ -12,26 +12,29 @@ export const WorkContainer = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
-  margin-top: 50px;
+  margin-top: 200px;
   max-width: 1000px;
   display: flex;
-  flex-direction: column;
-  /* align-items: flex-start; */
+
+  align-items: center;
   justify-content: flex-start;
   /* display: block; */
+   /* flex-direction: column; */
 `;
 
 export const WorkTitle = styled.div`
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
-  display: inline;
+  display: block;
   border-bottom-width: 4px;
   border-color: rgb(219 39 119);
 `;
 
 export const WorkDescriptionContainer = styled.div`
-  font-size: 2.25rem;
+  font-size: 1rem;
   line-height: 2.5rem;
   font-weight: 700;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 `;

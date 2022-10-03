@@ -7,10 +7,19 @@ import {
   WorkTitle,
   WorkDescriptionContainer,
 } from './WorksStyle';
+import ToyRobot from '../assets/ToyRobot.png';
+import Iconic from '../assets/Iconic.png';
+import Kanban from '../assets/Kanban.png';
+import chat from '../assets/chat.png';
+import newspaper from '../assets/newspaper.png';
+import sportholic from '../assets/Sportholic.png';
+import portfolio from '../assets/Portfolio.png';
+
 type Props = {};
 const workArray = [
   {
     id: 1,
+    img: 'ToyRobot',
     title: 'Toy Robot Simulator',
     category: 'WEBSITE GAME',
     technology: [
@@ -26,6 +35,7 @@ const workArray = [
   },
   {
     id: 2,
+    img: 'Iconic',
     title: 'Iconic Demo',
     category: 'SHOPPING WEBSITE',
     technology: [
@@ -48,6 +58,7 @@ const workArray = [
   },
   {
     id: 3,
+    img: 'Kanban',
     title: 'KanBan Board App',
     category: 'PROJECT MANAGEMENT APP',
     technology: ['React', 'Material UI', 'date-fns', 'react-beautiful-dnd'],
@@ -57,6 +68,7 @@ const workArray = [
 
   {
     id: 4,
+    img: 'chat',
     title: 'Real-time chat App',
     category: 'CHAT APP',
     technology: [
@@ -79,6 +91,7 @@ const workArray = [
   },
   {
     id: 5,
+    img: 'newspaper',
     title: 'ABCnews Clone',
     category: 'NEWSPAPER WEBSITE',
     technology: ['React', 'Material UI', 'date-fns', 'lodash', 'date-fns-tz'],
@@ -87,6 +100,7 @@ const workArray = [
   },
   {
     id: 6,
+    img: 'Sportholic',
     title: 'Sportholic ',
     category: 'INJURY PREVENTING WEBSITE',
     technology: [
@@ -99,6 +113,23 @@ const workArray = [
     gitUrl: 'https://github.com/JeffLiusGitHub/ie_sport_injury-ver-1.3',
     link: 'https://www.bilibili.com/video/BV1jK411p7nm/?vd_source=1ba0949df227a0f9e027afb06286cb5e',
   },
+  {
+    id: 7,
+    img: 'Portfolio',
+    title: 'Jeff Liu`s portfolio',
+    category: 'PORTFOLIO WEBSITE',
+    technology: [
+      'React',
+      'Typescript',
+      'styled-Components',
+      'Frame Motion',
+      'React scroll',
+      'Material-UI',
+      'React-Intersection-Observer',
+    ],
+    gitUrl: 'https://github.com/JeffLiusGitHub/typescriptPortfolio',
+    link: 'localhost:3000',
+  },
 ];
 const Works = (props: Props) => {
   return (
@@ -106,13 +137,16 @@ const Works = (props: Props) => {
       <WorkContainer>
         <HeaderContainer>
           <WorkTitle>Work</WorkTitle>
-          <WorkDescriptionContainer>ABC</WorkDescriptionContainer>
         </HeaderContainer>
+        <WorkDescriptionContainer>
+          These are some personal projects I've worked with
+        </WorkDescriptionContainer>
 
         {workArray?.map((w) => (
           <Work
             key={w.id}
             id={w.id}
+            img={w.img}
             title={w.title}
             category={w.category}
             technology={w.technology}

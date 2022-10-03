@@ -15,6 +15,7 @@ export const Project = styled.div`
 
   @media screen and (max-width: 768px) {
     align-items: flex-start;
+    
   }
 `;
 
@@ -27,7 +28,7 @@ export const ProjectContent = styled.div`
     grid-column: 1 / -1;
     padding: 40px;
     background-color: transparent;
-    padding: 20px 0;
+    padding: 20px 15px;
   }
 `;
 
@@ -45,10 +46,10 @@ export const ProjectTitle = styled.div`
   grid-column: 1 / 6;
   grid-row: 2 / 3;
   position: relative;
-  border-bottom:5px;
+  border-bottom: 5px;
 `;
 
-export const GitIconContainer = styled.button`
+export const GitIconContainer = styled.a`
   display: flex;
   justify-content: center;
   grid-column: 5 / 6;
@@ -61,7 +62,7 @@ export const GitIconContainer = styled.button`
   }
 `;
 
-export const LinkIconContainer = styled.button`
+export const LinkIconContainer = styled.a`
   display: flex;
   justify-content: center;
   grid-column: 4 / 5;
@@ -92,13 +93,14 @@ export const ProjectDescriptions = styled.div`
   padding: 20px 25px;
   z-index: 200;
   border-radius: 10px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   :hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    box-shadow: 7px 8px 26px -7px rgba(0, 0, 0, 0.95);
   }
   @media (max-width: 600px) {
     background-color: transparent;
-    padding: 20px 0;
+    padding: 20px 5px;
   }
 `;
 
@@ -114,8 +116,8 @@ export const ProjectImg = styled.div`
   position: relative;
   border-radius: 5px;
   z-index: 0;
-  background-color: #64ffda;
-  background: linear-gradient(0.4turn, #64ffda, #64ff8d);
+  /* background-color: #09321a; */
+  animation: all 0.5 ease-in-out;
   border-radius: 2px;
   grid-row: 1 / -1;
   grid-column: ${(props) => (props.id % 2 === 1 ? '6 / -1' : ' 1 / 7')};
@@ -127,9 +129,11 @@ export const ProjectImg = styled.div`
     grid-column: 1 / -1;
     opacity: 0.25;
   }
+
   &:before {
     content: '';
     position: absolute;
+    border-radius: 5px;
     width: 100%;
     height: 100%;
     top: 0;
@@ -138,8 +142,14 @@ export const ProjectImg = styled.div`
     bottom: 0;
     z-index: 1;
     background-color: #8a1e4e;
+    background: linear-gradient(0.4turn, #09321a, #64ff8d);
     mix-blend-mode: screen;
     border-radius: 2px;
+  }
+  &:hover:before {
+    mix-blend-mode: normal;
+    background: transparent;
+    outline: 0px;
   }
   & > img {
     border-radius: 2px;

@@ -62,7 +62,7 @@ const Navbar = (Prop: Props) => {
   return (
     <div
       className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300 z-1000"
-      style={{ zIndex: '1000000' }}
+      style={{ zIndex: '1000000', boxShadow: '2px 9px 35px -5px #000000' }}
     >
       <Link
         activeClass="active"

@@ -108,7 +108,7 @@ const TimeLine = (props: Props) => {
       <ThemeProvider theme={theme}>
         <div
           style={{
-            height: '100vh',
+            height: `calc(100%+130px)`,
             minHeight: '1200px',
             backgroundColor: '#000013',
             display: 'flex',
@@ -118,7 +118,6 @@ const TimeLine = (props: Props) => {
         >
           <Timeline position="alternate">
             {timeLineArray.map((t) => (
-              
               <TimeLineContent
                 key={t.id}
                 align={t.align}

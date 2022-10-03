@@ -24,7 +24,7 @@ function App() {
       <Home textEnter={textEnter} textLeave={textLeave} />
       <About textEnter={textEnter} textLeave={textLeave} />
       <TimeLine />
-      <Skills />
+      {/* <Skills /> */}
       <Works />
     </div>
   );
