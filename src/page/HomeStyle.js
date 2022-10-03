@@ -48,6 +48,7 @@ export const RightContainer = styled.div`
   position: relative;
   animation-duration: 800ms;
   animation-timing-function: ease-in-out;
+  z-index: 1000;
   :hover {
     transform: perspective(1500px) rotateY(340deg);
   }

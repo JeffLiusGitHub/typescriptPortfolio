@@ -115,6 +115,7 @@ export const ProjectImg = styled.div`
   position: relative;
   border-radius: 5px;
   z-index: 0;
+  height: auto;
   animation: all 0.5 ease-in-out;
   border-radius: 2px;
   grid-row: 1 / -1;
@@ -160,6 +161,7 @@ export const ProjectImg = styled.div`
       object-fit: cover;
       width: auto;
       height: 100%;
+      max-height: 430px;
     }
   }
 `;

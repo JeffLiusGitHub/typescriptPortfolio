@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import wave from '../assets/wave.svg';
 export const BackgroundContainer = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #061d3d;
   color: rgb(209 213 219);
   z-index: 1;
   position: static;
+  min-height: 600px;
 `;
 
 export const MainContractContainer = styled.div`
@@ -16,6 +17,7 @@ export const MainContractContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  min-height: 600px;
 `;
 
 export const Title = styled.p`
@@ -28,7 +30,7 @@ export const Title = styled.p`
 `;
 export const Content = styled.div`
   margin-top: 120px;
-  font-size: 2.25rem;
+  font-size: 1rem;
   line-height: 2.5rem;
   font-weight: 700;
   display: block;

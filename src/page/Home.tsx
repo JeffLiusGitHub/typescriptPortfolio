@@ -1,9 +1,7 @@
 import React from 'react';
-import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 import avatarLight from '../assets/avatar_light.jpg';
-import avatar from '../assets/avatar.jpg';
-import styles from './Home.module.css';
+
 import {
   DeepBackgroundContainer,
   BackgroundContainer,
@@ -21,17 +19,12 @@ import {
   CallToActionButton,
   BlinkerCursor,
 } from './HomeStyle';
-import { motion } from 'framer-motion';
-import useMouse from '../components/useMouse';
 type Props = {
-  hover?: ConstrainBooleanParameters;
   textEnter: () => void;
   textLeave: () => void;
 };
 import { Element } from 'react-scroll';
 const Home = ({ textEnter, textLeave }: Props) => {
-  // const { textEnter, textLeave, variants, cursorVariant } = useMouse();
-
   return (
     <Element name="home">
       <DeepBackgroundContainer>

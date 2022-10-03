@@ -13,8 +13,6 @@ const useMouse = () => {
     };
   }, []);
 
-
-
   const variants: any = {
     default: {
       x: mousePosition.x - 16,
@@ -34,7 +32,6 @@ const useMouse = () => {
 
   const textEnter = () => {
     setCursorVariant('text');
-    console.log('in')
   };
   const textLeave = () => {
     setCursorVariant('default');
