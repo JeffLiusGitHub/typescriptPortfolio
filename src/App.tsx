@@ -27,7 +27,7 @@ function App() {
       <TimeLine />
       {/* <Skills /> */}
       <Works />
-      <Contract />
+      <Contract textEnter={textEnter} textLeave={textLeave} />
     </div>
   );
 }

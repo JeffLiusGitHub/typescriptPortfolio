@@ -55,13 +55,12 @@ const About = ({ textEnter, textLeave }: Props) => {
             </MainContentContainer>
             <p onMouseEnter={textEnter} onMouseLeave={textLeave}>
               I am a passionate and quality-oriented developer, experienced in
-              web development, especially front-end development with JavaScript,
-              Typescript, React, HTML and SQL. An effective communicator and a
-              good team player with can-do attitude. As a developer, I am
-              attentive to every detail with good time management. I am also a
-              quick learner, willing to keep up with the new technology. I am
-              currently pursuing a career with developer opportunities in a
-              full-time capacity.
+              web development. An effective communicator and a good team player
+              with can-do attitude. As a developer, I am attentive to every
+              detail with good time management. I am also a quick learner,
+              willing to keep up with the new technology. I am currently
+              pursuing a career with developer opportunities in a full-time
+              capacity.
             </p>
           </SecondLineContainer>
           {/* <ThirdLineContainer>
