@@ -4,18 +4,15 @@ import {
   FaTimes,
   FaGithub,
   FaLinkedin,
-  FaFacebook,
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/logo.png';
-import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll';
 import OuterLink from './OuterLink';
 import NavItems from './NavItems';
 import NavItemMobile from './NavItemMobile';
-import useMouse from './useMouse';
-// import JeffResume from '../../public/Jeff_Pdf_resume.pdf';
+
 type Props = {
   setHover?: React.Dispatch<React.SetStateAction<boolean>>;
 };

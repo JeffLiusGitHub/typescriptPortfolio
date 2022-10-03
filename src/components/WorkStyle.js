@@ -115,7 +115,6 @@ export const ProjectImg = styled.div`
   position: relative;
   border-radius: 5px;
   z-index: 0;
-  /* background-color: #09321a; */
   animation: all 0.5 ease-in-out;
   border-radius: 2px;
   grid-row: 1 / -1;
@@ -140,7 +139,6 @@ export const ProjectImg = styled.div`
     right: 0;
     bottom: 0;
     z-index: 1;
-    /* background-color: #8a1e4e; */
     background: linear-gradient(0.4turn, #09321a, #db2978);
     filter: grayscale(100%) contrast(1);
     mix-blend-mode: screen;

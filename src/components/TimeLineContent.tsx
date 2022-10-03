@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
@@ -25,12 +25,7 @@ const TimeLineContent = ({
   subContent,
   children,
 }: Props) => {
-  const theme = createTheme({
-    typography: {
-      fontFamily: ['VT323'].join(','),
-      fontSize: 20,
-    },
-  });
+
   const timeLineConnectorStyle = { color: 'E0D9F6', width: '6px' };
   const titleStyle = {
     color: '#ED5788',
