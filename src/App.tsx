@@ -4,12 +4,28 @@ import Home from './page/Home';
 import Contract from './page/Contract';
 import TimeLine from './page/TimeLine';
 import Works from './page/Works';
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import useMouse from './components/useMouse';
+import BottomNav from './components/BottomNav';
+import React, { useEffect, useState } from 'react';
+
 function App() {
-  const [hover, setHover] = useState<boolean>(false);
   const { textEnter, textLeave, variants, cursorVariant } = useMouse();
+  const [renderButtomIcon, setRenderButtomIcon] = useState<boolean>(false);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1024) {
+        setRenderButtomIcon(true);
+      } else {
+        setRenderButtomIcon(false);
+      }
+      // console.log('resize to: ', window.innerWidth, 'x', window.innerHeight);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <div>
       <motion.div
@@ -23,6 +39,7 @@ function App() {
       <TimeLine />
       <Works />
       <Contract textEnter={textEnter} textLeave={textLeave} />
+      {renderButtomIcon && <BottomNav />}
     </div>
   );
 }

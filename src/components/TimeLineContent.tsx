@@ -25,19 +25,25 @@ const TimeLineContent = ({
   subContent,
   children,
 }: Props) => {
-
   const timeLineConnectorStyle = { color: 'E0D9F6', width: '6px' };
   const titleStyle = {
+    fontSize: { sm: '20px', md: '30px', lg: '35px' },
     color: '#ED5788',
     textShadow:
-      '  0 0 30px #FF296D, 0 0 40px #FF296D, 0 0 50px #FF296D, 0 0 60px #FF296D',
+      '0 0 30px #FF296D, 0 0 40px #FF296D, 0 0 50px #FF296D, 0 0 60px #FF296D',
   };
   const contentStyle = {
     color: '#0BD9E8',
+    fontSize: { xs: '14px', sm: '15px', md: '30px', lg: '35px' },
     textShadow:
-      ' 0 0 20px #fff, 0 0 30px #005579, 0 0 40px #005579, 0 0 50px #005579, 0 0 60px #005579, 0 0 70px #005579',
+      '0 0 20px #fff, 0 0 30px #005579, 0 0 40px #005579, 0 0 50px #005579, 0 0 60px #005579, 0 0 70px #005579',
   };
-  const dateStyle = { margin: 'auto 0', color: '#302727B' };
+  const dateStyle = {
+    fontSize: { xs: '14px', sm: '15px', md: '30px', lg: '35px' },
+    margin: 'auto 0',
+    color: '#302727B',
+    wordWrap: 'break-word',
+  };
 
   const timeLineDotStyle = { backgroundColor: '#517693', fontSize: '3px' };
 

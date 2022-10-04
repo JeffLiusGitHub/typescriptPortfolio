@@ -36,11 +36,13 @@ export const ProjectLabel = styled.div`
   font-family: monospace;
   font-weight: bold;
   font-size: 24px;
+  z-index: 10;
 `;
 
 export const ProjectTitle = styled.div`
   font-size: 2rem;
   margin: 5px 0;
+  z-index: 10;
   color: #eee;
   grid-column: 1 / 6;
   grid-row: 2 / 3;

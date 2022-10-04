@@ -85,7 +85,7 @@ const Navbar = (Prop: Props) => {
         ))}
       </ul>
       {/* social  */}
-      <div className=" lg:flex fixed flex-col top-[35%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           {outerLinkArray?.map((o) => (
             <OuterLink key={o.name} color={o.color} url={o.url} name={o.name}>

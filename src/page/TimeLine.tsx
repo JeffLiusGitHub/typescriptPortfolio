@@ -103,7 +103,10 @@ const TimeLine = (props: Props) => {
             alignItems: 'center',
           }}
         >
-          <Timeline position="alternate">
+          <Timeline
+            position="alternate"
+            sx={{ padding: { xs: '0', sm: '0', md: '6px 16px' } }}
+          >
             {timeLineArray.map((t) => (
               <TimeLineContent
                 key={t.id}

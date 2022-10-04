@@ -7,6 +7,7 @@ export const DeepBackgroundContainer = styled.div`
   background-color: transparent;
   width: 100vw;
   height: 100vh;
+  min-height: 800px;
   z-index: 1000;
   position: relative;
 `;
@@ -19,6 +20,7 @@ export const BackgroundContainer = styled.div`
   background-position: center;
   width: 100vw;
   height: 100vh;
+  min-height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +32,7 @@ export const InnerContainer = styled.div`
   max-width: 1200px;
   display: flex;
   margin: auto;
+  min-height: 800px;
   padding: 0 32px;
   justify-content: center;
   align-items: center;

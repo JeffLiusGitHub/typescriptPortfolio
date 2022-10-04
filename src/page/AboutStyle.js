@@ -54,6 +54,7 @@ export const GridContainer = styled.div`
 `;
 
 export const TitleContainer = styled.div`
+  margin-top: 100px;
   @media (min-width: 640px) {
     text-align: right;
   }
