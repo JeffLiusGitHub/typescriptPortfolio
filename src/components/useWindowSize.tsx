@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react';
 
-type Props = {};
-
-const useWindowSize = (props: Props) => {
-  let windowSize;
-
+const useWindowSize = () => {
+  const [renderButtomIcon, setRenderButtomIcon] = useState<boolean>(false);
   useEffect(() => {
     const handleResize = () => {
-      console.log('resize to: ', window.innerWidth, 'x', window.innerHeight);
+      if (window.innerWidth < 1024) {
+        setRenderButtomIcon(true);
+      } else {
+        setRenderButtomIcon(false);
+      }
     };
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  return { renderButtomIcon };
 };
 
 export default useWindowSize;

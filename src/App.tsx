@@ -8,24 +8,11 @@ import { motion } from 'framer-motion';
 import useMouse from './components/useMouse';
 import BottomNav from './components/BottomNav';
 import React, { useEffect, useState } from 'react';
-
+import useWindowSize from './components/useWindowSize';
 function App() {
   const { textEnter, textLeave, variants, cursorVariant } = useMouse();
-  const [renderButtomIcon, setRenderButtomIcon] = useState<boolean>(false);
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 1024) {
-        setRenderButtomIcon(true);
-      } else {
-        setRenderButtomIcon(false);
-      }
-      // console.log('resize to: ', window.innerWidth, 'x', window.innerHeight);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  const { renderButtomIcon } = useWindowSize();
+
   return (
     <div>
       <motion.div
