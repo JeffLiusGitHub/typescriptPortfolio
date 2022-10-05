@@ -44,8 +44,8 @@ const Home = ({ textEnter, textLeave }: Props) => {
                 I'm passion about all new technologies. So, I switch my career
                 from a aircraft engineer to a full-stack developer. I have stack
                 with React, Typescript, Redux, Styled-Component, React Testing
-                Library, Restful Api, Material UI and Node JS. If you can
-                directly view my work or browsing my experience.
+                Library, Restful Api, Material UI, github and Node JS. If you
+                can directly view my work or browsing my experience.
               </Content>
               <ButtonContainer>
                 <Link

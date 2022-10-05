@@ -111,6 +111,25 @@ export const SkillContainer = styled.ul`
   margin-top: 10px;
   flex-wrap: wrap;
   justify-content: ${(props) => (props.id % 2 === 1 ? 'start' : 'end')};
+
+  & > li {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 7px),
+      calc(100% - 7px) 100%,
+      0 100%
+    );
+    background-color: rgba(92, 246, 255, 0.4);
+    margin: 2px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    font-size: 12px;
+  }
+  & > li:hover {
+    transform: scale(1.05);
+    box-shadow: 7px 8px 26px -7px rgba(0, 0, 0, 0.95);
+  }
 `;
 
 export const ProjectImg = styled.div`
@@ -143,7 +162,7 @@ export const ProjectImg = styled.div`
     bottom: 0;
     z-index: 1;
     background: linear-gradient(0.4turn, #09321a, #db2978);
-    filter: grayscale(100%) contrast(1);
+    filter: grayscale(60%) contrast(0.5);
     mix-blend-mode: screen;
     border-radius: 2px;
   }
@@ -153,9 +172,12 @@ export const ProjectImg = styled.div`
     outline: 0px;
   }
   & > img {
+    /* animation: all 1 ease-in-out; */
+    transition: all 0.3s ease-in-out;
     border-radius: 2px;
     position: relative;
     mix-blend-mode: multiply;
+    z-index: 1000;
     :hover {
       transform: scale(1.1);
     }

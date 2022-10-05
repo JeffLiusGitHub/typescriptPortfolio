@@ -114,7 +114,7 @@ const workArray = [
       'video start from 02:12',
     ],
     gitUrl: 'https://github.com/JeffLiusGitHub/ie_sport_injury-ver-1.3',
-    link: 'https://www.bilibili.com/video/BV1jK411p7nm/?vd_source=1ba0949df227a0f9e027afb06286cb5e',
+    link: 'https://www.bilibili.com/video/BV1jK411p7nm?share_source=copy_web&t=133',
     desc: 'A web sport injury preventing web app inspired by once I falling down from the bike. Provide map route search, traffic knowledge education, quiz for traffic knowledge with explanations, common injuries illustration, 3D street view for most dangerous area, etc.',
   },
   {

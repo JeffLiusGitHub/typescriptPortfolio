@@ -11,11 +11,18 @@ export const BackgroundContainer = styled.div`
 
 export const ParallaxPositiveContainer = styled.div`
   position: absolute;
-  transform: skew(0deg, -25deg) scaleY(1.33333) translate(-50%, -50%);
+  transform: skew(5deg, -25deg) scaleY(1.33333) translate(-50%, -50%);
   display: inline-block;
   opacity: 0.05;
   left: 50%;
-  bottom: 40%;
+  top: 30%;
+  @media (max-width: 1200px) {
+    top: 80%;
+  }
+  @media (max-width: 768px) {
+    top: 110%;
+  }
+
   z-index: 1;
   font-size: 900px;
   overflow-x: hidden;

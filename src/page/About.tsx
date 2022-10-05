@@ -31,11 +31,11 @@ const About = ({ textEnter, textLeave }: Props) => {
     <Element name="about">
       <BackgroundContainer>
         <ParallaxPositiveContainer>
-          <ParallaxText baseVelocity={-4}>Ze xi Liu </ParallaxText>
+          <ParallaxText baseVelocity={-4}>Website Designer </ParallaxText>
           <ParallaxText baseVelocity={4}> Full Stack Developer </ParallaxText>
-          <ParallaxText baseVelocity={-4}> Ze xi Liu </ParallaxText>
+          <ParallaxText baseVelocity={-4}> Website Designer </ParallaxText>
           <ParallaxText baseVelocity={4}> Full Stack Developer </ParallaxText>
-          <ParallaxText baseVelocity={-4}> Ze xi Liu </ParallaxText>
+          <ParallaxText baseVelocity={-4}> Website Designer </ParallaxText>
           <ParallaxText baseVelocity={5}> Full Stack Developer </ParallaxText>
         </ParallaxPositiveContainer>
         <MainAboutContainer>

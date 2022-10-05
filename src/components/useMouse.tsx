@@ -25,7 +25,7 @@ const useMouse = () => {
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
       mixBlendMode: 'difference',
-
+      // transform: 'scale(1.2)',
       borderRadius: '50%',
     },
   };

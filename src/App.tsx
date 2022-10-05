@@ -7,8 +7,8 @@ import Works from './page/Works';
 import { motion } from 'framer-motion';
 import useMouse from './components/useMouse';
 import BottomNav from './components/BottomNav';
-import React, { useEffect, useState } from 'react';
 import useWindowSize from './components/useWindowSize';
+import { AnimatePresence } from 'framer-motion';
 function App() {
   const { textEnter, textLeave, variants, cursorVariant } = useMouse();
   const { renderButtomIcon } = useWindowSize();
