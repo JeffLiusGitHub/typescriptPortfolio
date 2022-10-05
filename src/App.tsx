@@ -14,12 +14,13 @@ function App() {
   const { renderButtomIcon } = useWindowSize();
 
   return (
-    <div>
+    <div style={{
+      //  overflowX: 'hidden', width: '100vw', height: '100vh' 
+       }}>
       <motion.div
         className="cursor"
         variants={variants}
         animate={cursorVariant}
-   
       />
       <Navbar />
       <Home textEnter={textEnter} textLeave={textLeave} />

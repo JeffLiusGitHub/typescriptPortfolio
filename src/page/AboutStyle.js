@@ -7,6 +7,7 @@ export const BackgroundContainer = styled.div`
   color: rgb(209 213 219);
   z-index: 1;
   position: static;
+  overflow-x: hidden;
 `;
 
 export const ParallaxPositiveContainer = styled.div`

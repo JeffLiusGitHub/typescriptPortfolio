@@ -22,7 +22,7 @@ const About = ({ textEnter, textLeave }: Props) => {
   const isContentInView = useInView(contentRef);
   return (
     <Element name="about">
-      <BackgroundContainer >
+      <BackgroundContainer>
         <ParallaxPositiveContainer>
           <ParallaxText baseVelocity={-4}>Website Designer </ParallaxText>
           <ParallaxText baseVelocity={4}> Full Stack Developer </ParallaxText>
@@ -32,8 +32,8 @@ const About = ({ textEnter, textLeave }: Props) => {
           <ParallaxText baseVelocity={5}> Full Stack Developer </ParallaxText>
         </ParallaxPositiveContainer>
         <MainAboutContainer>
-          <GridContainer>
-            <TitleContainer ref={titleRef}
+          <GridContainer ref={titleRef}>
+            <TitleContainer
               style={{
                 transform: isTitleInView ? 'none' : 'translateX(-400px)',
                 opacity: isTitleInView ? 1 : 0,
