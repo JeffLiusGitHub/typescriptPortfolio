@@ -158,17 +158,7 @@ const Works = (props: Props) => {
         </WorkDescriptionContainer>
 
         {workArray?.map((w) => (
-          <Work
-            key={w.id}
-            id={w.id}
-            img={w.img}
-            title={w.title}
-            category={w.category}
-            technology={w.technology}
-            gitUrl={w.gitUrl}
-            link={w.link}
-            desc={w.desc}
-          />
+          <Work key={w.id} {...w} />
         ))}
       </WorkContainer>
     </Element>

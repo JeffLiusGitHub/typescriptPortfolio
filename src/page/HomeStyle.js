@@ -37,6 +37,9 @@ export const InnerContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const LeftContainer = styled.div`

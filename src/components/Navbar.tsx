@@ -88,7 +88,7 @@ const Navbar = (Prop: Props) => {
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           {outerLinkArray?.map((o) => (
-            <OuterLink key={o.name} color={o.color} url={o.url} name={o.name}>
+            <OuterLink key={o.name} {...o}>
               {o.children}
             </OuterLink>
           ))}

@@ -32,7 +32,7 @@ export const ParallaxPositiveContainer = styled.div`
   font-size: 900px;
   overflow-x: hidden;
   text-overflow: clip;
-  overflow: hidden;
+  overflow-x: hidden;
   white-space: nowrap;
   width: 100%;
   /* width: 50%; */

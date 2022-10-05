@@ -24,12 +24,18 @@ const About = ({ textEnter, textLeave }: Props) => {
     <Element name="about">
       <BackgroundContainer>
         <ParallaxPositiveContainer>
-          <ParallaxText baseVelocity={-4}>Website Designer </ParallaxText>
-          <ParallaxText baseVelocity={4}> Full Stack Developer </ParallaxText>
-          <ParallaxText baseVelocity={-4}> Website Designer </ParallaxText>
-          <ParallaxText baseVelocity={4}> Full Stack Developer </ParallaxText>
-          <ParallaxText baseVelocity={-4}> Website Designer </ParallaxText>
-          <ParallaxText baseVelocity={5}> Full Stack Developer </ParallaxText>
+          <ParallaxText baseVelocity={-3}>Website Designer&nbsp;</ParallaxText>
+          <ParallaxText baseVelocity={3}>
+            Full Stack Developer&nbsp;
+          </ParallaxText>
+          <ParallaxText baseVelocity={-3}> Website Designer&nbsp;</ParallaxText>
+          <ParallaxText baseVelocity={3}>
+            Full Stack Developer&nbsp;
+          </ParallaxText>
+          <ParallaxText baseVelocity={-3}>Website Designer&nbsp;</ParallaxText>
+          <ParallaxText baseVelocity={3}>
+            Full Stack Developer&nbsp;
+          </ParallaxText>
         </ParallaxPositiveContainer>
         <MainAboutContainer>
           <GridContainer ref={titleRef}>
