@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Work from '../components/Work';
 import { Element } from 'react-scroll';
 import {
@@ -7,13 +7,7 @@ import {
   WorkTitle,
   WorkDescriptionContainer,
 } from './WorksStyle';
-import ToyRobot from '../assets/ToyRobot.png';
-import Iconic from '../assets/Iconic.png';
-import Kanban from '../assets/Kanban.png';
-import chat from '../assets/chat.png';
-import newspaper from '../assets/newspaper.png';
-import sportholic from '../assets/Sportholic.png';
-import portfolio from '../assets/Portfolio.png';
+import { useInView } from 'framer-motion';
 
 type Props = {};
 const workArray = [
@@ -137,13 +131,29 @@ const workArray = [
   },
 ];
 const Works = (props: Props) => {
+  const titleRef = useRef<HTMLInputElement>(null);
+  const isTitleInView = useInView(titleRef);
   return (
     <Element name="work">
-      <WorkContainer>
+      <WorkContainer ref={titleRef}>
         <HeaderContainer>
-          <WorkTitle>Work</WorkTitle>
+          <WorkTitle
+            style={{
+              transform: isTitleInView ? 'none' : 'translateY(-300px)',
+              opacity: isTitleInView ? 1 : 0,
+              transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+            }}
+          >
+            Work
+          </WorkTitle>
         </HeaderContainer>
-        <WorkDescriptionContainer>
+        <WorkDescriptionContainer
+          style={{
+            transform: isTitleInView ? 'none' : 'translateY(-200px)',
+            opacity: isTitleInView ? 1 : 0,
+            transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+          }}
+        >
           These are some personal projects I've worked with
         </WorkDescriptionContainer>
 

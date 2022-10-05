@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Element } from 'react-scroll';
 import ParallaxText from '../components/ParallaxText';
+import { useInView } from 'framer-motion';
 import {
   BackgroundContainer,
   ParallaxPositiveContainer,
@@ -10,26 +11,18 @@ import {
   Title,
   SecondLineContainer,
   MainContentContainer,
-  ThirdLineContainer,
-  SkillContainer,
   Spacer,
 } from './AboutStyle';
 type Props = { textEnter: () => void; textLeave: () => void };
 
 const About = ({ textEnter, textLeave }: Props) => {
-  const skillSetArray = [
-    'React',
-    'Typescript',
-    'Redux',
-    'Styled-Component',
-    'React Testing Library',
-    'Restful Api',
-    'Material UI',
-    'Node Js',
-  ];
+  const titleRef = useRef<HTMLInputElement>(null);
+  const contentRef = useRef<HTMLInputElement>(null);
+  const isTitleInView = useInView(titleRef);
+  const isContentInView = useInView(contentRef);
   return (
     <Element name="about">
-      <BackgroundContainer>
+      <BackgroundContainer >
         <ParallaxPositiveContainer>
           <ParallaxText baseVelocity={-4}>Website Designer </ParallaxText>
           <ParallaxText baseVelocity={4}> Full Stack Developer </ParallaxText>
@@ -40,20 +33,42 @@ const About = ({ textEnter, textLeave }: Props) => {
         </ParallaxPositiveContainer>
         <MainAboutContainer>
           <GridContainer>
-            <TitleContainer>
+            <TitleContainer ref={titleRef}
+              style={{
+                transform: isTitleInView ? 'none' : 'translateX(-400px)',
+                opacity: isTitleInView ? 1 : 0,
+                transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+              }}
+            >
               <Title onMouseEnter={textEnter} onMouseLeave={textLeave}>
                 About
               </Title>
             </TitleContainer>
             <div></div>
           </GridContainer>
-          <SecondLineContainer>
+          <SecondLineContainer ref={contentRef}>
             <MainContentContainer>
-              <p onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <p
+                onMouseEnter={textEnter}
+                onMouseLeave={textLeave}
+                style={{
+                  transform: isContentInView ? 'none' : 'translateX(-200px)',
+                  opacity: isContentInView ? 1 : 0,
+                  transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+                }}
+              >
                 Hi. I'm Jeff, nice to meet you. Please take a look around.
               </p>
             </MainContentContainer>
-            <p onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <p
+              onMouseEnter={textEnter}
+              onMouseLeave={textLeave}
+              style={{
+                transform: isContentInView ? 'none' : 'translateX(200px)',
+                opacity: isContentInView ? 1 : 0,
+                transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+              }}
+            >
               I am a passionate and quality-oriented developer, experienced in
               web development. An effective communicator and a good team player
               with can-do attitude. As a developer, I am attentive to every

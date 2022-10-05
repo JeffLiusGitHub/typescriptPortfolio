@@ -95,8 +95,8 @@ const TimeLine = (props: Props) => {
       <ThemeProvider theme={theme}>
         <div
           style={{
-            height: 'calc(100% + 250px)',
-            minHeight: '1200px',
+            height: 'calc(80% + 150px)',
+            minHeight: '1000px',
             backgroundColor: '#000013',
             display: 'flex',
             justifyContent: 'center',

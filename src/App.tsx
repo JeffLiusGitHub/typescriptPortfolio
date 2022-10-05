@@ -19,6 +19,7 @@ function App() {
         className="cursor"
         variants={variants}
         animate={cursorVariant}
+   
       />
       <Navbar />
       <Home textEnter={textEnter} textLeave={textLeave} />

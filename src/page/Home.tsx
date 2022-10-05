@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-scroll';
 import avatarLight from '../assets/avatar_light.jpg';
-
+import { useInView } from 'framer-motion';
 import {
   DeepBackgroundContainer,
   BackgroundContainer,
@@ -25,12 +25,20 @@ type Props = {
 };
 import { Element } from 'react-scroll';
 const Home = ({ textEnter, textLeave }: Props) => {
+  const contentRef = useRef<HTMLInputElement>(null);
+  const isContentInView = useInView(contentRef, { once: true });
   return (
     <Element name="home">
       <DeepBackgroundContainer>
         <BackgroundContainer>
-          <InnerContainer>
-            <LeftContainer>
+          <InnerContainer ref={contentRef}>
+            <LeftContainer
+              style={{
+                transform: isContentInView ? 'none' : 'translateX(-200px)',
+                opacity: isContentInView ? 1 : 0,
+                transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+              }}
+            >
               <Subtitle onMouseEnter={textEnter} onMouseLeave={textLeave}>
                 Hi, my name is
               </Subtitle>
@@ -62,7 +70,13 @@ const Home = ({ textEnter, textLeave }: Props) => {
                 </Link>
               </ButtonContainer>
             </LeftContainer>
-            <RightContainer>
+            <RightContainer
+              style={{
+                transform: isContentInView ? 'none' : 'translateX(200px)',
+                opacity: isContentInView ? 1 : 0,
+                transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+              }}
+            >
               <AvatarLightStyle src={avatarLight} alt="avatar light" />
               <AvatarStyle>
                 <Border>

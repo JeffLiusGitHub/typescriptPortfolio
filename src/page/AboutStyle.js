@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import wave from '../assets/wave.svg';
 export const BackgroundContainer = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   background-color: rgb(10 25 47);
   color: rgb(209 213 219);
   z-index: 1;
@@ -16,6 +16,10 @@ export const ParallaxPositiveContainer = styled.div`
   opacity: 0.05;
   left: 50%;
   top: 30%;
+  @media (max-width: 1800px) {
+    top: 60%;
+  }
+
   @media (max-width: 1200px) {
     top: 80%;
   }
