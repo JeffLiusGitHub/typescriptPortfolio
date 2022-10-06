@@ -19,6 +19,7 @@ import {
   CallToActionButton,
   BlinkerCursor,
 } from './HomeStyle';
+import { homeDescription } from '../Data/Data';
 type Props = {
   textEnter: () => void;
   textLeave: () => void;
@@ -49,9 +50,7 @@ const Home = ({ textEnter, textLeave }: Props) => {
                 I'm a full-stack developer
               </MainTitle>
               <Content onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                As a passionate developer, I switched my career from an aircraft engineer to a full-stack developer. I have experience working with React, Typescript, Redux, Styled-Component, React Testing
-                Library, Restful Api, Material UI, github and Node JS. You
-                can directly view my work or browsing my past experience.
+                {homeDescription}
               </Content>
               <ButtonContainer>
                 <Link

@@ -14,9 +14,11 @@ function App() {
   const { renderButtomIcon } = useWindowSize();
 
   return (
-    <div style={{
-      //  overflowX: 'hidden', width: '100vw', height: '100vh' 
-       }}>
+    <div
+      style={{
+        overflowX: 'hidden',
+      }}
+    >
       <motion.div
         className="cursor"
         variants={variants}

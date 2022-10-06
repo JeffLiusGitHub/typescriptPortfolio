@@ -9,6 +9,7 @@ import {
 import { CallToActionButton, BlinkerCursor } from './HomeStyle';
 import { useInView } from 'framer-motion';
 import { Element } from 'react-scroll';
+import { contactDescription } from '../Data/Data';
 type Props = { textEnter: () => void; textLeave: () => void };
 
 const Contract = ({ textEnter, textLeave }: Props) => {
@@ -36,9 +37,7 @@ const Contract = ({ textEnter, textLeave }: Props) => {
               transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
             }}
           >
-            Feel free to contact me if you are interested in my work, skills or
-            would like to speak with me. You can find my linkedin, github, email
-            and resume by clicking the link below. Let's keep in touch!
+            {contactDescription}
           </Content>
           <ButtonContainer>
             <a
@@ -47,7 +46,7 @@ const Contract = ({ textEnter, textLeave }: Props) => {
               rel="noopener noreferrer"
             >
               <CallToActionButton>
-              Contact<BlinkerCursor>_</BlinkerCursor>
+                Contact<BlinkerCursor>_</BlinkerCursor>
               </CallToActionButton>
             </a>
           </ButtonContainer>

@@ -6,82 +6,17 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
-import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive';
-import ConstructionIcon from '@mui/icons-material/Construction';
-import Id from '../assets/id-card.png';
-import ContactMailIcon from '@mui/icons-material/ContactMail';
-import SchoolIcon from '@mui/icons-material/School';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Element } from 'react-scroll';
 import { LeftFly, Spacer } from './TimeLineAnimation';
 import TimeLineContent from '../components/TimeLineContent';
 import { useInView } from 'react-intersection-observer';
+import { timeLineArray } from '../Data/Data';
 type Props = {};
 
 const TimeLine = (props: Props) => {
-  const timeLineArray = [
-    {
-      id: 1,
-      align: 'right',
-      date: 'Sep 2010 – Sep 2014',
-      title: 'Education',
-      mainContent: '❖ Bachelor of Electrical Engineering and Automation',
-      subContent: '-- Civil Aviation University of China',
-      children: <SchoolIcon />,
-    },
-    {
-      id: 2,
-      align: 'left',
-      date: 'Jul 2014 -Jul 2017',
-      title: 'Experience',
-      mainContent: '❖ JuneYao Airline (China)',
-      subContent: 'Aircraft Electrical Engineer --',
-      children: <ConstructionIcon />,
-    },
-    {
-      id: 3,
-      align: 'right',
-      date: 'Jul 2018 – Jul 2020',
-      title: 'Education',
-      mainContent: '❖ Master of Information Technology',
-      subContent: '--Monash University',
-      children: <SchoolIcon />,
-    },
-    {
-      id: 4,
-      align: 'left',
-      date: 'Nov 2019 - Feb 2020',
-      title: 'Internship',
-      mainContent: '❖ Topsek Technology Ltd (Shanghai headquarter)',
-      subContent: 'Data Visualizations intern--',
-      children: <ContactMailIcon />,
-    },
-    {
-      id: 5,
-      align: 'right',
-      date: 'Nov 2020 – Oct 2021',
-      title: 'Experience',
-      mainContent: '❖ Ablink Pty Ltd (Australia)',
-      subContent: '--React Developer',
-      children: <LaptopMacIcon />,
-    },
-    {
-      id: 6,
-      align: 'left',
-      date: 'Apr 2022 – June 2022',
-      title: 'Experience',
-      mainContent: '❖ Openpay Group Ltd (Australia)',
-      subContent: 'Frontend Developer--',
-      children: <LaptopMacIcon />,
-    },
-  ];
   const { ref: leftRef, inView: leftIsVisable } = useInView();
-  // console.log(leftIsVisable);
 
   const theme = createTheme({
     typography: {
@@ -108,14 +43,7 @@ const TimeLine = (props: Props) => {
             sx={{ padding: { xs: '0', sm: '0', md: '6px 16px' } }}
           >
             {timeLineArray.map((t) => (
-              <TimeLineContent
-                key={t.id}
-                align={t.align}
-                date={t.date}
-                title={t.title}
-                mainContent={t.mainContent}
-                subContent={t.subContent}
-              >
+              <TimeLineContent key={t.id} {...t}>
                 {t.children}
               </TimeLineContent>
             ))}

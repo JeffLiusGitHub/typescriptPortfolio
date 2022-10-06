@@ -11,7 +11,7 @@ export const WorkContainer = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
-  margin-top: 80px;
+  margin-top: 180px;
   max-width: 1000px;
   display: flex;
   align-items: center;

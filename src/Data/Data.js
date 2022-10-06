@@ -1,0 +1,194 @@
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+import ConstructionIcon from '@mui/icons-material/Construction';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
+import SchoolIcon from '@mui/icons-material/School';
+
+export const homeDescription =
+  'As a passionate developer, I switched my career from an aircraft engineer to a full-stack developer. I have experience working with React, Typescript, Redux, Styled-Component, React Testing Library, Restful Api, Material UI, github and Node JS. You can directly view my work or browsing my past experience.';
+
+export const aboutPrimaryContent =
+  'Hi. I`m Jeff, nice to meet you. Please take a look around.';
+
+export const aboutSecondryContent =
+  ' With an eye for details and good time management, I am a passionate and quality-oriented developer with extensive experience in web development. An effective communicator and a good team player with can-do attitude. As a developer, I am a quick learner, eager to keep up with the latest technology. I am currently pursuing a full-time career with in developer opportunities.';
+
+export const timeLineArray = [
+  {
+    id: 1,
+    align: 'right',
+    date: 'Sep 2010 – Sep 2014',
+    title: 'Education',
+    mainContent: '❖ Bachelor of Electrical Engineering and Automation',
+    subContent: '-- Civil Aviation University of China',
+    children: <SchoolIcon />,
+  },
+  {
+    id: 2,
+    align: 'left',
+    date: 'Jul 2014 -Jul 2017',
+    title: 'Experience',
+    mainContent: '❖ JuneYao Airline (China)',
+    subContent: 'Aircraft Electrical Engineer --',
+    children: <ConstructionIcon />,
+  },
+  {
+    id: 3,
+    align: 'right',
+    date: 'Jul 2018 – Jul 2020',
+    title: 'Education',
+    mainContent: '❖ Master of Information Technology',
+    subContent: '--Monash University',
+    children: <SchoolIcon />,
+  },
+  {
+    id: 4,
+    align: 'left',
+    date: 'Nov 2019 - Feb 2020',
+    title: 'Internship',
+    mainContent: '❖ Topsek Technology Ltd (Shanghai headquarter)',
+    subContent: 'Data Visualizations intern--',
+    children: <ContactMailIcon />,
+  },
+  {
+    id: 5,
+    align: 'right',
+    date: 'Nov 2020 – Oct 2021',
+    title: 'Experience',
+    mainContent: '❖ Ablink Pty Ltd (Australia)',
+    subContent: '--React Developer',
+    children: <LaptopMacIcon />,
+  },
+  {
+    id: 6,
+    align: 'left',
+    date: 'Apr 2022 – June 2022',
+    title: 'Experience',
+    mainContent: '❖ Openpay Group Ltd (Australia)',
+    subContent: 'Frontend Developer--',
+    children: <LaptopMacIcon />,
+  },
+];
+
+export const workArray = [
+  {
+    id: 1,
+    img: 'Iconic',
+    title: 'Iconic Demo',
+    category: 'SHOPPING WEBSITE',
+    technology: [
+      'React',
+      'Redux',
+      'Styled-component',
+      'Material UI',
+      'animation-on-scroll',
+      'react-router-dom',
+      'formik',
+      'yup',
+      'axios',
+      'node.js',
+      'JWT token',
+      'mongoDB',
+      'heroku',
+      'stripe',
+    ],
+    gitUrl: 'https://github.com/JeffLiusGitHub/shoppingDemo',
+    link: 'https://iconic-shopping.web.app/',
+    desc: 'An online shopping web application for registering and logging into the website. Users can add items to the cart, or wishlist and pay using Stripe API. If users login as admin, they can view analytics on other user`s shopping behaviour.',
+  },
+  {
+    id: 2,
+    img: 'ToyRobot',
+    title: 'Toy Robot Simulator',
+    category: 'WEBSITE GAME',
+    technology: [
+      'React',
+      'Redux',
+      'Styled-component',
+      'Material UI',
+      'firebase',
+      'react testing library',
+    ],
+    gitUrl: 'https://github.com/JeffLiusGitHub/toy-robot',
+    link: 'https://toy-robot-simulator-69acb.web.app/',
+    desc: 'A game application to manipulate the turtle`s movement, turn left, turn right, place the turtle, and report its current coordinates. It will indicate if the user attempts a wrong move like moving a turtle before it`s placed, or moving it out of the table. ',
+  },
+  {
+    id: 3,
+    img: 'Kanban',
+    title: 'KanBan Board App',
+    category: 'PROJECT MANAGEMENT APP',
+    technology: ['React', 'Material UI', 'date-fns', 'react-beautiful-dnd'],
+    gitUrl: 'https://github.com/JeffLiusGitHub/trello',
+    link: 'https://kanban-45ef5.web.app/',
+    desc: 'A project management app that organises  tasks based on the schedules. It features a number of function such as: creating tasks, modifying tasks, and deleting them, as well as overdue alerts. Easy to use, drag the tasks and create your own!',
+  },
+
+  {
+    id: 4,
+    img: 'chat',
+    title: 'Real-time chat App',
+    category: 'CHAT APP',
+    technology: [
+      'React',
+      'Redux',
+      'Styled-component',
+      'Lottie animation',
+      'socket io',
+      'material UI',
+      'react-emoji',
+      'axios',
+      'firebase',
+      'heroku',
+    ],
+    gitUrl: 'https://github.com/JeffLiusGitHub/chatting-app',
+    link: 'https://chat-462f6.web.app/',
+    desc: 'A web chat app supports multiple users chatting on the same screen. Support emoticons. Have fun chatting with your friends right now!',
+  },
+  {
+    id: 5,
+    img: 'newspaper',
+    title: 'ABCnews Clone',
+    category: 'NEWSPAPER WEBSITE',
+    technology: ['React', 'Material UI', 'date-fns', 'lodash', 'date-fns-tz'],
+    gitUrl: 'https://github.com/JeffLiusGitHub/newspaper_demo',
+    link: 'https://news-43792.web.app/',
+    desc: 'A web newspaper app based on ABC news that uses recursion to destructure JSON data. The website is designed to work with most ABC news data formats.',
+  },
+  {
+    id: 6,
+    img: 'Sportholic',
+    title: 'Sportholic ',
+    category: 'INJURY PREVENTING WEBSITE',
+    technology: [
+      'ASP.net',
+      'css',
+      'AfterEffects',
+      'Premiere',
+      'video start from 02:12',
+    ],
+    gitUrl: 'https://github.com/JeffLiusGitHub/ie_sport_injury-ver-1.3',
+    link: 'https://www.bilibili.com/video/BV1jK411p7nm?share_source=copy_web&t=133',
+    desc: 'An injury prevention web application inspired by a bike accident. Features include map route search, traffic knowledge education, quiz on traffic knowledge,  illustration of common injuries, 3D street view for the most dangerous area, etc.',
+  },
+  {
+    id: 7,
+    img: 'Portfolio',
+    title: 'Jeff Liu`s portfolio',
+    category: 'PORTFOLIO WEBSITE',
+    technology: [
+      'React',
+      'Typescript',
+      'styled-Components',
+      'Frame Motion',
+      'React scroll',
+      'Material-UI',
+      'React-Intersection-Observer',
+    ],
+    gitUrl: 'https://github.com/JeffLiusGitHub/typescriptPortfolio',
+    link: 'https://portfolio-add7c.web.app/',
+    desc: 'A self-introduction website with sections such as introduction, experience and work. Enhance the user experience by using proper animation.',
+  },
+];
+
+export const contactDescription =
+  'Feel free to contact me if you are interested in my work, skills or would like to speak with me. You can find my linkedin, github, email and resume by clicking the link below. Let`s keep in touch!';

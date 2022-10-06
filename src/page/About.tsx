@@ -13,6 +13,9 @@ import {
   MainContentContainer,
   Spacer,
 } from './AboutStyle';
+import { aboutPrimaryContent } from '../Data/Data';
+import { aboutSecondryContent } from '../Data/Data';
+
 type Props = { textEnter: () => void; textLeave: () => void };
 
 const About = ({ textEnter, textLeave }: Props) => {
@@ -63,7 +66,7 @@ const About = ({ textEnter, textLeave }: Props) => {
                   transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
                 }}
               >
-                Hi. I'm Jeff, nice to meet you. Please take a look around.
+                {aboutPrimaryContent}
               </p>
             </MainContentContainer>
             <p
@@ -75,13 +78,7 @@ const About = ({ textEnter, textLeave }: Props) => {
                 transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
               }}
             >
-              With an eye for details and good time management, I am a
-              passionate and quality-oriented developer with extensive
-              experience in web development. An effective communicator and a
-              good team player with can-do attitude. As a developer, I am a
-              quick learner, eager to keep up with the latest technology. I am
-              currently pursuing a full-time career with in developer
-              opportunities.
+              {aboutSecondryContent}
             </p>
           </SecondLineContainer>
         </MainAboutContainer>
