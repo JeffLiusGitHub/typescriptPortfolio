@@ -1,5 +1,4 @@
 import React from 'react';
-import { createTheme } from '@mui/material/styles';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';

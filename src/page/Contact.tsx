@@ -5,7 +5,7 @@ import {
   Title,
   Content,
   ButtonContainer,
-} from './ContractStyle';
+} from './ContactStyle';
 import { CallToActionButton, BlinkerCursor } from './HomeStyle';
 import { useInView } from 'framer-motion';
 import { Element } from 'react-scroll';

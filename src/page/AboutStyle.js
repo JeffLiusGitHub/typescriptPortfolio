@@ -7,7 +7,6 @@ export const BackgroundContainer = styled.div`
   color: rgb(209 213 219);
   z-index: 1;
   position: static;
- 
 `;
 
 export const ParallaxPositiveContainer = styled.div`
@@ -20,30 +19,19 @@ export const ParallaxPositiveContainer = styled.div`
   @media (max-width: 1800px) {
     top: 60%;
   }
-
   @media (max-width: 1200px) {
     top: 80%;
   }
   @media (max-width: 768px) {
     top: 110%;
   }
-
   z-index: 1;
   font-size: 900px;
   text-overflow: clip;
   overflow-x: hidden;
   white-space: nowrap;
   width: 100%;
-  /* width: 50%; */
 `;
-// export const ParallaxNegativeContainer = styled.div`
-//   position: absolute;
-//   transform: skew(0deg, -25deg) scaleY(1.33333) translate(-50%, -50%);
-//   opacity: 0.05;
-//   left: 50%;
-//   bottom: 50%;
-//   z-index: 10000;
-// `;
 
 export const MainAboutContainer = styled.div`
   display: flex;
@@ -127,7 +115,6 @@ export const MainContentContainer = styled.div`
 
 export const Spacer = styled.div`
   content: '';
-  /* aspect-ratio: 960/300; */
   height: 435px;
   width: 100%;
   background-repeat: no-repeat;

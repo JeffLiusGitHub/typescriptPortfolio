@@ -1,5 +1,16 @@
 import styled, { css, keyframes } from 'styled-components';
 import bottomWave from '../assets/bottomWave.svg';
+
+export const TimelineMainTitle = styled.div`
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  display: inline;
+  border-bottom-width: 4px;
+  border-color: rgb(219 39 119);
+  color: white;
+  margin: 180px 0;
+`;
 export const leftFlyin = (isAnimated) => keyframes`
  from {
     left: -30%;

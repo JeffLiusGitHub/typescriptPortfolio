@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar';
 import About from './page/About';
 import Home from './page/Home';
-import Contract from './page/Contract';
+import Contract from './page/Contact';
 import TimeLine from './page/TimeLine';
 import Works from './page/Works';
 import { motion } from 'framer-motion';

@@ -13,10 +13,14 @@ import { LeftFly, Spacer } from './TimeLineAnimation';
 import TimeLineContent from '../components/TimeLineContent';
 import { useInView } from 'react-intersection-observer';
 import { timeLineArray } from '../Data/Data';
+import { TimelineMainTitle } from './TimeLineAnimation';
+import { useInView as frameInView } from 'framer-motion';
 type Props = {};
 
 const TimeLine = (props: Props) => {
   const { ref: leftRef, inView: leftIsVisable } = useInView();
+  const titleRef = useRef<HTMLInputElement>(null);
+  const isContentInView = frameInView(titleRef);
 
   const theme = createTheme({
     typography: {
@@ -29,15 +33,26 @@ const TimeLine = (props: Props) => {
     <Element name="experience">
       <ThemeProvider theme={theme}>
         <div
+          ref={titleRef}
           style={{
             height: 'calc(80% + 150px)',
             minHeight: '1000px',
             backgroundColor: '#000013',
             display: 'flex',
+            flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
           }}
         >
+          <TimelineMainTitle
+            style={{
+              opacity: isContentInView ? 1 : 0,
+              transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s',
+            }}
+          >
+            Experience
+          </TimelineMainTitle>
+
           <Timeline
             position="alternate"
             sx={{ padding: { xs: '0', sm: '0', md: '6px 16px' } }}
