@@ -13,23 +13,6 @@ type Props = {};
 const workArray = [
   {
     id: 1,
-    img: 'ToyRobot',
-    title: 'Toy Robot Simulator',
-    category: 'WEBSITE GAME',
-    technology: [
-      'React',
-      'Redux',
-      'Styled-component',
-      'Material UI',
-      'firebase',
-      'react testing library',
-    ],
-    gitUrl: 'https://github.com/JeffLiusGitHub/toy-robot',
-    link: 'https://toy-robot-simulator-69acb.web.app/',
-    desc: 'A game web app for manipulating the turtle move, turn left, turn right, place the turtle and report the current coordinates. Website will report if user want to do the invalid move like move turtle before place it, move turtle out of the table etc. ',
-  },
-  {
-    id: 2,
     img: 'Iconic',
     title: 'Iconic Demo',
     category: 'SHOPPING WEBSITE',
@@ -51,7 +34,24 @@ const workArray = [
     ],
     gitUrl: 'https://github.com/JeffLiusGitHub/shoppingDemo',
     link: 'https://iconic-shopping.web.app/',
-    desc: 'A shopping web app for buying cloth and accessories online. User can register and login the website to add product to cart or to the wishlist. User can do pay the product based on stripe api. If user login as admin, they can see the dashboard based on other user`s shopping behavior.',
+    desc: 'An online shopping web application for registering and logging into the website. Users can add items to the cart, or wishlist and pay using Stripe API. If users login as admin, they can view analytics on other user`s shopping behavior.',
+  },
+  {
+    id: 2,
+    img: 'ToyRobot',
+    title: 'Toy Robot Simulator',
+    category: 'WEBSITE GAME',
+    technology: [
+      'React',
+      'Redux',
+      'Styled-component',
+      'Material UI',
+      'firebase',
+      'react testing library',
+    ],
+    gitUrl: 'https://github.com/JeffLiusGitHub/toy-robot',
+    link: 'https://toy-robot-simulator-69acb.web.app/',
+    desc: 'A game application to manipulate the turtle`s movement, turn left, turn right, place the turtle, and report its current coordinates. It will indicate if the user attempts a wrong move like moving a turtle before it`s placed, or moving it out of the table. ',
   },
   {
     id: 3,
@@ -61,7 +61,7 @@ const workArray = [
     technology: ['React', 'Material UI', 'date-fns', 'react-beautiful-dnd'],
     gitUrl: 'https://github.com/JeffLiusGitHub/trello',
     link: 'https://kanban-45ef5.web.app/',
-    desc: 'A project management app for arrange task based on time schedule. Support multiple functions such as: create task, modify task, and delete task, overdue alert, feel free to drag the card and create your own card!',
+    desc: 'A project management app that organizes  tasks based on the schedules. It features a number of function such as: creating tasks, modifying tasks, and deleting them, as well as overdue alerts. Easy to use, drag the tasks and create your own!',
   },
 
   {
@@ -83,7 +83,7 @@ const workArray = [
     ],
     gitUrl: 'https://github.com/JeffLiusGitHub/chatting-app',
     link: 'https://chat-462f6.web.app/',
-    desc: 'A web chat app for chatting with friends. Support multiple users chatting in the same room. Support emoji. Have fun with your friend right now!',
+    desc: 'A web chat app supports multiple users chatting on the same screen. Support emoticons. Have fun chatting with your friends right now!',
   },
   {
     id: 5,
@@ -93,7 +93,7 @@ const workArray = [
     technology: ['React', 'Material UI', 'date-fns', 'lodash', 'date-fns-tz'],
     gitUrl: 'https://github.com/JeffLiusGitHub/newspaper_demo',
     link: 'https://news-43792.web.app/',
-    desc: 'A web newspaper app inspired by ABC news by using recrusion to destructure json data. Website can work for most ABC news format data structure.',
+    desc: 'A web newspaper app based on ABC news that uses recursion to destructure JSON data. The website is designed to work with most ABC news data formats.',
   },
   {
     id: 6,
@@ -109,7 +109,7 @@ const workArray = [
     ],
     gitUrl: 'https://github.com/JeffLiusGitHub/ie_sport_injury-ver-1.3',
     link: 'https://www.bilibili.com/video/BV1jK411p7nm?share_source=copy_web&t=133',
-    desc: 'A web sport injury preventing web app inspired by once I falling down from the bike. Provide map route search, traffic knowledge education, quiz for traffic knowledge with explanations, common injuries illustration, 3D street view for most dangerous area, etc.',
+    desc: 'An injury prevention web application inspired by a bike accident. Features include map route search, traffic knowledge education, quiz on traffic knowledge,  illustration of common injuries, 3D street view for the most dangerous area, etc.',
   },
   {
     id: 7,
@@ -127,7 +127,7 @@ const workArray = [
     ],
     gitUrl: 'https://github.com/JeffLiusGitHub/typescriptPortfolio',
     link: 'https://portfolio-add7c.web.app/',
-    desc: 'A web sport injury preventing web app inspired by once I falling down from the bike. Provide map route search, traffic knowledge education, quiz for traffic knowledge with explanations, common injuries illustration, 3D street view for most dangerous area, etc.',
+    desc: 'A self-introduction website with sections such as introduction, experience and work. Enhance the user experience by using proper animation.',
   },
 ];
 const Works = (props: Props) => {

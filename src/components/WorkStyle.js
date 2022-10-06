@@ -100,8 +100,8 @@ export const ProjectDescriptions = styled.div`
     box-shadow: 7px 8px 26px -7px rgba(0, 0, 0, 0.95);
   }
   @media (max-width: 600px) {
-    background-color: transparent;
-    padding: 20px 5px;
+    background-color: rgba(32, 32, 32, 0.3);
+    padding: 20px 10px;
   }
 `;
 
@@ -180,12 +180,16 @@ export const ProjectImg = styled.div`
     z-index: 1000;
     :hover {
       transform: scale(1.1);
+      @media (max-width: 600px) {
+        transform: scale(1);
+      }
     }
     @media screen and (max-width: 768px) {
       object-fit: cover;
       width: auto;
       height: 100%;
       max-height: 430px;
+      transform: scale(1);
     }
   }
 `;

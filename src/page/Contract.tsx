@@ -26,7 +26,7 @@ const Contract = ({ textEnter, textLeave }: Props) => {
               transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
             }}
           >
-            Contract
+            Contact
           </Title>
           <Content
             onMouseEnter={textEnter}
@@ -36,10 +36,9 @@ const Contract = ({ textEnter, textLeave }: Props) => {
               transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
             }}
           >
-            If you are interested on my work, skills or want to talk to me, feel
-            free to contract me by click the link below. Or, you can click the
-            button on the left, and reach to my linkedin, github, email and my
-            resume. Get in touch soon!
+            Feel free to contact me if you are interested in my work, skills or
+            would like to speak with me. You can find my linkedin, github, email
+            and resume by clicking the link below. Let's keep in touch!
           </Content>
           <ButtonContainer>
             <a
@@ -48,7 +47,7 @@ const Contract = ({ textEnter, textLeave }: Props) => {
               rel="noopener noreferrer"
             >
               <CallToActionButton>
-                Contract<BlinkerCursor>_</BlinkerCursor>
+              Contact<BlinkerCursor>_</BlinkerCursor>
               </CallToActionButton>
             </a>
           </ButtonContainer>

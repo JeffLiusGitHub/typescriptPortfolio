@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import wave from '../assets/wave.svg';
 export const BackgroundContainer = styled.div`
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-color: rgb(10 25 47);
   color: rgb(209 213 219);
   z-index: 1;
   position: static;
-  overflow-x: hidden;
+ 
 `;
 
 export const ParallaxPositiveContainer = styled.div`
@@ -30,7 +30,6 @@ export const ParallaxPositiveContainer = styled.div`
 
   z-index: 1;
   font-size: 900px;
-  overflow-x: hidden;
   text-overflow: clip;
   overflow-x: hidden;
   white-space: nowrap;

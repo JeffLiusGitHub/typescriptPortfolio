@@ -75,13 +75,13 @@ const About = ({ textEnter, textLeave }: Props) => {
                 transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
               }}
             >
-              I am a passionate and quality-oriented developer, experienced in
-              web development. An effective communicator and a good team player
-              with can-do attitude. As a developer, I am attentive to every
-              detail with good time management. I am also a quick learner,
-              willing to keep up with the new technology. I am currently
-              pursuing a career with developer opportunities in a full-time
-              capacity.
+              With an eye for details and good time management, I am a
+              passionate and quality-oriented developer with extensive
+              experience in web development. An effective communicator and a
+              good team player with can-do attitude. As a developer, I am a
+              quick learner, eager to keep up with the latest technology. I am
+              currently pursuing a full-time career with in developer
+              opportunities.
             </p>
           </SecondLineContainer>
         </MainAboutContainer>

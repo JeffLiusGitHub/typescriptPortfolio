@@ -59,10 +59,12 @@ const BottomNav = (props: Props) => {
           style={{
             background:
               'radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(74,132,200,0.8) 100%)',
+            boxShadow: '1px -5px 35px -4px rgba(0,0,0,0.66)',
           }}
         >
-          {outlinkArray.map((o) => (
+          {outlinkArray.map((o, key) => (
             <BottomNavigationAction
+              key={key}
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: 'rgb(37 38 39)' }}

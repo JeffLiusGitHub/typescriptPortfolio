@@ -35,7 +35,7 @@ const rightFlyin = keyframes`
 export const Spacer = styled.div`
   content: '';
 
-  height: 1133px;
+  height: 380px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
