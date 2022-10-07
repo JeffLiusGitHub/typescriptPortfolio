@@ -43,11 +43,9 @@
   },
   "husky": {
     "hooks": {
-
-     "pre-push": "npm run build&firebase deploy"
-    
+      "pre-push": "git diff HEAD --quiet&&npm run build&firebase deploy"
     }
-   },
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
