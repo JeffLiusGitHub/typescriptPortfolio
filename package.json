@@ -41,6 +41,13 @@
     "lint:fix": "eslint --fix .",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+
+     "pre-push": "npm run build&firebase deploy"
+    
+    }
+   },
   "eslintConfig": {
     "extends": [
       "react-app",
