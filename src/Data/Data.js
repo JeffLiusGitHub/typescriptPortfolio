@@ -2,6 +2,44 @@ import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import SchoolIcon from '@mui/icons-material/School';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+
+export const navItemsArray = [
+  'home',
+  'about',
+  'experience',
+  'work',
+  'contract',
+];
+
+export const outerLinkArray = [
+  {
+    color: 'rgb(59 130 246)',
+    url: 'https://linkedin.com/in/zexi-liu-0934841b3/',
+    name: 'Linkedin',
+    children: <FaLinkedin size={30} />,
+  },
+  {
+    color: 'rgb(59 62 66)',
+    url: 'https://Github.com/JeffLiusGitHub ',
+    name: 'Github',
+    children: <FaGithub size={30} />,
+  },
+  {
+    color: 'rgb(111 194 176)',
+    url: 'mailto:jeffliu2802@hotmail.com',
+    name: 'Mail',
+    children: <HiOutlineMail size={30} />,
+  },
+  {
+    color: 'rgb(88 95 105)',
+    url: '/Jeff_pdf_resume.pdf',
+    name: 'Resume',
+    children: <BsFillPersonLinesFill size={30} />,
+  },
+];
 
 export const homeDescription =
   'As a passionate developer, I switched my career from an aircraft engineer to a full-stack developer. I have experience working with React, Typescript, Redux, Styled-Component, React Testing Library, Restful Api, Material UI, github and Node JS. You can directly view my work or browsing my past experience.';

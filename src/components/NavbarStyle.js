@@ -45,3 +45,35 @@ export const NavBarItemContainer = styled.ul`
     border-color: rgb(219 39 119);
   }
 `;
+
+export const HambugerButton = styled.button`
+  z-index: 10;
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const MobileNavBarContainer = styled.ul`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(8 25 47);
+  display: flex;
+  flex-direction: column;
+  /* place-items: center center; */
+  justify-content: center;
+  align-items: center;
+`;
+
+export const SocialContainer = styled.ul`
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+  position: fixed;
+  flex-direction: column;
+  top: 35%;
+  left: 0;
+`;
