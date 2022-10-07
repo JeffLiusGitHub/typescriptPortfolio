@@ -24,7 +24,7 @@ const Contract = ({ textEnter, textLeave }: Props) => {
             onMouseLeave={textLeave}
             style={{
               opacity: isContentInView ? 1 : 0,
-              transform: isContentInView ? 'none' : 'translateY(200px)',
+              transform: isContentInView ? 'none' : 'translateY(-100px)',
               transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
             }}
           >
@@ -35,7 +35,7 @@ const Contract = ({ textEnter, textLeave }: Props) => {
             onMouseLeave={textLeave}
             style={{
               opacity: isContentInView ? 1 : 0,
-              transform: isContentInView ? 'none' : 'translateY(200px)',
+              transform: isContentInView ? 'none' : 'translateY(-100px)',
               transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
             }}
           >
