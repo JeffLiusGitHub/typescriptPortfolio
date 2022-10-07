@@ -35,9 +35,9 @@ const Home = ({ textEnter, textLeave }: Props) => {
           <InnerContainer ref={contentRef}>
             <LeftContainer
               style={{
-                transform: isContentInView ? 'none' : 'translateX(-200px)',
+                transform: isContentInView ? 'none' : 'translateY(200px)',
                 opacity: isContentInView ? 1 : 0,
-                transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+                transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
               }}
             >
               <Subtitle onMouseEnter={textEnter} onMouseLeave={textLeave}>
@@ -69,9 +69,9 @@ const Home = ({ textEnter, textLeave }: Props) => {
             </LeftContainer>
             <RightContainer
               style={{
-                transform: isContentInView ? 'none' : 'translateX(200px)',
+                transform: isContentInView ? 'none' : 'translateY(120px)',
                 opacity: isContentInView ? 1 : 0,
-                transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+                transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
               }}
             >
               <AvatarLightStyle src={avatarLight} alt="avatar light" />

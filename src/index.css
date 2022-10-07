@@ -17,7 +17,9 @@
 
 * {
   cursor: none;
-
+}
+.a {
+  cursor: none;
 }
 
 .cursor {
