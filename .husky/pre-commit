@@ -2,5 +2,7 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 yarn tsc
+npm run build
+firebase deploy
 #!yarn lint-staged
 #!npm test 
