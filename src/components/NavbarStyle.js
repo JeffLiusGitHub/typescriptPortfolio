@@ -36,13 +36,25 @@ export const NavBarItemContainer = styled.ul`
   @media (min-width: 768px) {
     display: flex;
   }
-  & > a > li {
-    border-bottom-width: 4px;
-    border-color: #07192e;
+`;
+export const NavLi = styled.li`
+  position: relative;
+  display: inline;
+  text-decoration: none;
+  &::after {
+    position: absolute;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: rgb(219 39 119);
+    bottom: -8px;
+    transform: scale(0, 1);
+    transition: transform 0.3s;
+    transform-origin: left top;
   }
-  & > a > li:hover {
-    border-bottom-width: 4px;
-    border-color: rgb(219 39 119);
+  &:hover::after {
+    transform: scale(1, 1);
   }
 `;
 

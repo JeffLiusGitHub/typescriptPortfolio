@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { NavLi } from './NavbarStyle';
 type Props = { section: string };
 
 const NavItems = ({ section }: Props) => {
@@ -12,7 +13,7 @@ const NavItems = ({ section }: Props) => {
       offset={50}
       duration={500}
     >
-      <li>{section.toUpperCase()}</li>
+      <NavLi>{section.toUpperCase()}</NavLi>
     </Link>
   );
 };
