@@ -128,7 +128,7 @@ export const SkillContainer = styled.ul`
   }
   & > li:hover {
     transform: scale(1.05);
-    box-shadow: 7px 8px 26px -7px rgba(0, 0, 0, 0.95);
+    box-shadow: -1px 7px 19px 10px rgba(89, 176, 194, 0.87);
   }
 `;
 

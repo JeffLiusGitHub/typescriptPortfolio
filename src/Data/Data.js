@@ -172,6 +172,7 @@ export const workArray = [
       'Styled-component',
       'Lottie animation',
       'socket io',
+      'node.js',
       'material UI',
       'react-emoji',
       'axios',

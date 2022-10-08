@@ -56,6 +56,9 @@ export const NavLi = styled.li`
   &:hover::after {
     transform: scale(1, 1);
   }
+  &:active::after {
+    transform: scale(1, 1);
+  }
 `;
 
 export const HambugerButton = styled.button`
