@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef,memo } from 'react';
 import {
   BackgroundContainer,
   MainContractContainer,
@@ -15,6 +15,7 @@ type Props = { textEnter: () => void; textLeave: () => void };
 const Contract = ({ textEnter, textLeave }: Props) => {
   const contentRef = useRef<HTMLInputElement>(null);
   const isContentInView = useInView(contentRef);
+  console.log('contract')
   return (
     <Element name="contract">
       <BackgroundContainer ref={contentRef}>
@@ -58,4 +59,4 @@ const Contract = ({ textEnter, textLeave }: Props) => {
   );
 };
 
-export default Contract;
+export default memo(Contract);

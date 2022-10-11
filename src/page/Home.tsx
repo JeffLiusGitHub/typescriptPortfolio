@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef,memo } from 'react';
 import { Link } from 'react-scroll';
 import avatarLight from '../assets/avatar_light.jpg';
 import { useInView } from 'framer-motion';
@@ -26,6 +26,7 @@ type Props = {
 };
 import { Element } from 'react-scroll';
 const Home = ({ textEnter, textLeave }: Props) => {
+  console.log('rendering')
   const contentRef = useRef<HTMLInputElement>(null);
   const isContentInView = useInView(contentRef, { once: true });
   return (
@@ -88,4 +89,4 @@ const Home = ({ textEnter, textLeave }: Props) => {
   );
 };
 
-export default Home;
+export default memo(Home);

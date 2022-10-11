@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef,memo } from 'react';
 import { Element } from 'react-scroll';
 import ParallaxText from '../components/ParallaxText';
 import { useInView } from 'framer-motion';
@@ -19,6 +19,7 @@ import { aboutSecondryContent } from '../Data/Data';
 type Props = { textEnter: () => void; textLeave: () => void };
 
 const About = ({ textEnter, textLeave }: Props) => {
+  console.log('about')
   const titleRef = useRef<HTMLInputElement>(null);
   const contentRef = useRef<HTMLInputElement>(null);
   const isTitleInView = useInView(titleRef);
@@ -88,4 +89,4 @@ const About = ({ textEnter, textLeave }: Props) => {
   );
 };
 
-export default About;
+export default memo(About);

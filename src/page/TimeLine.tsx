@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState,memo } from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -18,6 +18,7 @@ import { useInView as frameInView } from 'framer-motion';
 type Props = {};
 
 const TimeLine = (props: Props) => {
+  console.log('timeline')
   const { ref: leftRef, inView: leftIsVisable } = useInView();
   const titleRef = useRef<HTMLInputElement>(null);
   const isContentInView = frameInView(titleRef);
@@ -70,4 +71,4 @@ const TimeLine = (props: Props) => {
   );
 };
 
-export default TimeLine;
+export default memo(TimeLine);
