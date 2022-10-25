@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import borderImg from '../assets/border.png';
 export const ProjectContainer = styled.div`
   max-width: 1000px;
   margin: 50px auto;
@@ -142,6 +142,7 @@ export const ProjectImg = styled.div`
   grid-row: 1 / -1;
   grid-column: ${(props) => (props.id % 2 === 1 ? '6 / -1' : ' 1 / 7')};
   border-radius: 10px;
+
   @media screen and (max-width: 768px) {
     height: 100%;
   }
@@ -165,6 +166,7 @@ export const ProjectImg = styled.div`
     filter: grayscale(60%) contrast(0.5);
     mix-blend-mode: screen;
     border-radius: 2px;
+    
   }
   &:hover:before {
     mix-blend-mode: normal;
@@ -173,6 +175,11 @@ export const ProjectImg = styled.div`
   }
   & > img {
     /* animation: all 1 ease-in-out; */
+    /* border-image-source: url(${borderImg});
+  border-image-slice: 25 36 18 68;
+  border-image-width: 7px 7px 7px 7px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch; */
     transition: all 0.3s ease-in-out;
     border-radius: 2px;
     position: relative;

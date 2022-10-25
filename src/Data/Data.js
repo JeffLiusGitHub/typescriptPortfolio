@@ -11,7 +11,7 @@ export const navItemsArray = [
   'about',
   'experience',
   'work',
-  'contract',
+  'contact',
 ];
 
 export const outerLinkArray = [

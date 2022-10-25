@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,memo } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Logo from '../assets/logo.png';
 import { Link } from 'react-scroll';
@@ -21,6 +21,7 @@ type Props = {
 };
 
 const Navbar = (Prop: Props) => {
+  console.log('nav')
   const [openTab, setOpenTab] = useState<boolean>(false);
   const { renderButtomIcon } = useWindowSize();
 
@@ -72,4 +73,4 @@ const Navbar = (Prop: Props) => {
   );
 };
 
-export default Navbar;
+export default memo(Navbar);
