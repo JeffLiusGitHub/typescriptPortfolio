@@ -3,10 +3,8 @@ import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Paper from '@mui/material/Paper';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from '@mui/icons-material/Email';
-import SummarizeIcon from '@mui/icons-material/Summarize';
+
+import { outlinkBottomArray } from '../Data/Data';
 type Props = {};
 
 const BottomNav = (props: Props) => {
@@ -16,28 +14,7 @@ const BottomNav = (props: Props) => {
   React.useEffect(() => {
     (ref.current as HTMLDivElement).ownerDocument.body.scrollTop = 0;
   }, [value]);
-  const outlinkArray = [
-    {
-      label: 'Linkedin',
-      icon: <LinkedInIcon />,
-      href: 'https://linkedin.com/in/zexi-liu-0934841b3/',
-    },
-    {
-      label: 'Github',
-      icon: <GitHubIcon />,
-      href: 'https://Github.com/JeffLiusGitHub',
-    },
-    {
-      label: 'Email',
-      icon: <EmailIcon />,
-      href: 'mailto:jeffliu2802@hotmail.com',
-    },
-    {
-      label: 'Resume',
-      icon: <SummarizeIcon />,
-      href: '/Jeff_pdf_resume.pdf',
-    },
-  ];
+
   return (
     <Box sx={{ pb: 7 }} ref={ref}>
       <Paper
@@ -62,7 +39,7 @@ const BottomNav = (props: Props) => {
             boxShadow: '1px -5px 35px -4px rgba(0,0,0,0.66)',
           }}
         >
-          {outlinkArray.map((o, key) => (
+          {outlinkBottomArray.map((o: any, key: any) => (
             <BottomNavigationAction
               key={key}
               target="_blank"

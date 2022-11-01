@@ -5,13 +5,33 @@ import SchoolIcon from '@mui/icons-material/School';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
+import SummarizeIcon from '@mui/icons-material/Summarize';
+export const navItemsArray = ['home', 'about', 'experience', 'work', 'contact'];
 
-export const navItemsArray = [
-  'home',
-  'about',
-  'experience',
-  'work',
-  'contact',
+export const outlinkBottomArray = [
+  {
+    label: 'Linkedin',
+    icon: <LinkedInIcon />,
+    href: 'https://linkedin.com/in/zexi-liu-0934841b3/',
+  },
+  {
+    label: 'Github',
+    icon: <GitHubIcon />,
+    href: 'https://Github.com/JeffLiusGitHub',
+  },
+  {
+    label: 'Email',
+    icon: <EmailIcon />,
+    href: 'mailto:jeffliu2802@hotmail.com',
+  },
+  {
+    label: 'Resume',
+    icon: <SummarizeIcon />,
+    href: '/Jeff_pdf_resume.pdf',
+  },
 ];
 
 export const outerLinkArray = [
