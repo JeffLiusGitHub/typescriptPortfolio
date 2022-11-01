@@ -19,10 +19,6 @@ const useMouse = () => {
     default: {
       x: mousePosition.x - 16,
       y: mousePosition.y - 16,
-<<<<<<< HEAD
-      
-=======
->>>>>>> 484cd2f (enhance performance)
     },
     text: {
       height: 150,
