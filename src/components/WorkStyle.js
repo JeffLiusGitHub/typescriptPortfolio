@@ -28,6 +28,7 @@ export const ProjectContent = styled.div`
     padding: 40px;
     background-color: transparent;
     padding: 20px 15px;
+    text-align: left;
   }
 `;
 
@@ -36,7 +37,8 @@ export const ProjectLabel = styled.div`
   font-family: monospace;
   font-weight: bold;
   font-size: 24px;
-  z-index: 10;
+  position:relative;
+  z-index: 1000;
 `;
 
 export const ProjectTitle = styled.div`
@@ -48,6 +50,7 @@ export const ProjectTitle = styled.div`
   grid-row: 2 / 3;
   position: relative;
   border-bottom: 5px;
+ 
 `;
 
 export const GitIconContainer = styled.a`
@@ -166,7 +169,6 @@ export const ProjectImg = styled.div`
     filter: grayscale(60%) contrast(0.5);
     mix-blend-mode: screen;
     border-radius: 2px;
-    
   }
   &:hover:before {
     mix-blend-mode: normal;
