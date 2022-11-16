@@ -18,6 +18,12 @@ const Contract = ({ textEnter, textLeave }: Props) => {
   const contentRef = useRef<HTMLInputElement>(null);
   const isContentInView = useInView(contentRef);
   console.log('contract');
+
+  const animationStyle = {
+    opacity: isContentInView ? 1 : 0,
+    transform: isContentInView ? 'none' : 'translateY(-100px)',
+    transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+  };
   return (
     <Element name="contact">
       <BackgroundContainer ref={contentRef}>
@@ -25,29 +31,21 @@ const Contract = ({ textEnter, textLeave }: Props) => {
           <Title
             onMouseEnter={textEnter}
             onMouseLeave={textLeave}
-            style={{
-              opacity: isContentInView ? 1 : 0,
-              transform: isContentInView ? 'none' : 'translateY(-100px)',
-              transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
-            }}
+            style={animationStyle}
           >
             Contact
           </Title>
           <Content
             onMouseEnter={textEnter}
             onMouseLeave={textLeave}
-            style={{
-              opacity: isContentInView ? 1 : 0,
-              transform: isContentInView ? 'none' : 'translateY(-100px)',
-              transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
-            }}
+            style={animationStyle}
           >
             {contactDescription}
           </Content>
-          <EmailContainer>
+          <EmailContainer style={animationStyle}>
             <CopyToClipboard
               text="jeffliu2802@hotmail.com"
-              onCopy={()=>alert('email copied!')}
+              onCopy={() => alert('email copied!')}
             >
               <span>jeffliu2802@hotmail.com</span>
             </CopyToClipboard>

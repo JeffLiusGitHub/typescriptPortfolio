@@ -12,20 +12,17 @@ var Contract = function (_a) {
     var contentRef = react_1.useRef(null);
     var isContentInView = framer_motion_1.useInView(contentRef);
     console.log('contract');
+    var animationStyle = {
+        opacity: isContentInView ? 1 : 0,
+        transform: isContentInView ? 'none' : 'translateY(-100px)',
+        transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s'
+    };
     return (react_1["default"].createElement(react_scroll_1.Element, { name: "contact" },
         react_1["default"].createElement(ContactStyle_1.BackgroundContainer, { ref: contentRef },
             react_1["default"].createElement(ContactStyle_1.MainContractContainer, null,
-                react_1["default"].createElement(ContactStyle_1.Title, { onMouseEnter: textEnter, onMouseLeave: textLeave, style: {
-                        opacity: isContentInView ? 1 : 0,
-                        transform: isContentInView ? 'none' : 'translateY(-100px)',
-                        transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s'
-                    } }, "Contact"),
-                react_1["default"].createElement(ContactStyle_1.Content, { onMouseEnter: textEnter, onMouseLeave: textLeave, style: {
-                        opacity: isContentInView ? 1 : 0,
-                        transform: isContentInView ? 'none' : 'translateY(-100px)',
-                        transition: 'all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s'
-                    } }, Data_1.contactDescription),
-                react_1["default"].createElement(ContactStyle_1.EmailContainer, null,
+                react_1["default"].createElement(ContactStyle_1.Title, { onMouseEnter: textEnter, onMouseLeave: textLeave, style: animationStyle }, "Contact"),
+                react_1["default"].createElement(ContactStyle_1.Content, { onMouseEnter: textEnter, onMouseLeave: textLeave, style: animationStyle }, Data_1.contactDescription),
+                react_1["default"].createElement(ContactStyle_1.EmailContainer, { style: animationStyle },
                     react_1["default"].createElement(react_copy_to_clipboard_1.CopyToClipboard, { text: "jeffliu2802@hotmail.com", onCopy: function () { return alert('email copied!'); } },
                         react_1["default"].createElement("span", null, "jeffliu2802@hotmail.com"))),
                 react_1["default"].createElement(ContactStyle_1.ButtonContainer, null,

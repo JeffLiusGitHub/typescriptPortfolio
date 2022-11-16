@@ -92,3 +92,10 @@ export const SocialContainer = styled.ul`
   top: 35%;
   left: 0;
 `;
+
+export const NavTopButtonContainer = styled.div`
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  z-index:10000;
+`;
