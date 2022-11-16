@@ -86,7 +86,7 @@ export const timeLineArray = [
     date: 'Jul 2014 -Jul 2017',
     title: 'Experience',
     mainContent: '❖ JuneYao Airline (China)',
-    subContent: 'Aircraft Electrical Engineer --',
+    subContent: 'Aircraft Electrical Engineer--',
     children: <ConstructionIcon />,
   },
   {
@@ -95,7 +95,7 @@ export const timeLineArray = [
     date: 'Nov 2019 - Feb 2020',
     title: 'Internship',
     mainContent: '❖ Topsek Technology Ltd (Shanghai headquarter)',
-    subContent: 'Data Visualizations intern--',
+    subContent: '--Data Visualizations intern',
     children: <ContactMailIcon />,
   },
   {
@@ -104,7 +104,7 @@ export const timeLineArray = [
     date: 'Jul 2018 – Jul 2020',
     title: 'Education',
     mainContent: '❖ Master of Information Technology',
-    subContent: '--Monash University',
+    subContent: 'Monash University--',
     children: <SchoolIcon />,
   },
 
