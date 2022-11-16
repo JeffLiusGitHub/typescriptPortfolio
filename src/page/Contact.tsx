@@ -4,12 +4,14 @@ import {
   MainContractContainer,
   Title,
   Content,
+  EmailContainer,
   ButtonContainer,
 } from './ContactStyle';
 import { CallToActionButton, BlinkerCursor } from './HomeStyle';
 import { useInView } from 'framer-motion';
 import { Element } from 'react-scroll';
 import { contactDescription } from '../Data/Data';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 type Props = { textEnter: () => void; textLeave: () => void };
 
 const Contract = ({ textEnter, textLeave }: Props) => {
@@ -42,6 +44,15 @@ const Contract = ({ textEnter, textLeave }: Props) => {
           >
             {contactDescription}
           </Content>
+          <EmailContainer>
+            <CopyToClipboard
+              text="jeffliu2802@hotmail.com"
+              onCopy={()=>alert('email copied!')}
+            >
+              <span>jeffliu2802@hotmail.com</span>
+            </CopyToClipboard>
+          </EmailContainer>
+
           <ButtonContainer>
             <a
               href="mailto:jeffliu2802@hotmail.com"

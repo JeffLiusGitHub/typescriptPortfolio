@@ -37,6 +37,38 @@ export const Content = styled.div`
   max-width: 800px;
   padding: 0 25px;
 `;
+
+export const EmailContainer = styled.div`
+  margin-top: 50px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  max-width: 800px;
+  position: relative;
+    display: inline;
+  /* display: block; */
+  /* text-align: left; */
+  cursor: pointer;
+  &::after {
+    position: absolute;
+    right: 0;
+    content: ' ';
+    width: 100%;
+    height: 4px;
+    background: rgb(219 39 119);
+    bottom: -8px;
+    transform: scale(0, 1);
+    transition: transform 0.3s;
+    transform-origin: left top;
+  }
+  &:hover::after {
+    transform: scale(1, 1);
+  }
+  &:active::after {
+    transform: scale(1, 1);
+  }
+`;
+
 export const ButtonContainer = styled.div`
-  margin-top: 100px;
+  margin-top: 50px;
 `;

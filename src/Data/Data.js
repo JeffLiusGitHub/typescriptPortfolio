@@ -91,15 +91,6 @@ export const timeLineArray = [
   },
   {
     id: 3,
-    align: 'right',
-    date: 'Jul 2018 – Jul 2020',
-    title: 'Education',
-    mainContent: '❖ Master of Information Technology',
-    subContent: '--Monash University',
-    children: <SchoolIcon />,
-  },
-  {
-    id: 4,
     align: 'left',
     date: 'Nov 2019 - Feb 2020',
     title: 'Internship',
@@ -107,6 +98,16 @@ export const timeLineArray = [
     subContent: 'Data Visualizations intern--',
     children: <ContactMailIcon />,
   },
+  {
+    id: 4,
+    align: 'right',
+    date: 'Jul 2018 – Jul 2020',
+    title: 'Education',
+    mainContent: '❖ Master of Information Technology',
+    subContent: '--Monash University',
+    children: <SchoolIcon />,
+  },
+
   {
     id: 5,
     align: 'right',
