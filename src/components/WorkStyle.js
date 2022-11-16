@@ -39,6 +39,9 @@ export const ProjectLabel = styled.div`
   font-size: 24px;
   position:relative;
   z-index: 1000;
+  @media (max-width: 600px) {
+    text-align: left;
+  }
 `;
 
 export const ProjectTitle = styled.div`
@@ -50,7 +53,9 @@ export const ProjectTitle = styled.div`
   grid-row: 2 / 3;
   position: relative;
   border-bottom: 5px;
- 
+  @media (max-width: 600px) {
+    text-align: left;
+  }
 `;
 
 export const GitIconContainer = styled.a`
@@ -76,6 +81,9 @@ export const LinkIconContainer = styled.a`
   :hover {
     cursor: pointer;
     transform: scale(1.1);
+  }
+  @media (max-width: 600px) {
+    text-align: left;
   }
 `;
 
@@ -114,7 +122,9 @@ export const SkillContainer = styled.ul`
   margin-top: 10px;
   flex-wrap: wrap;
   justify-content: ${(props) => (props.id % 2 === 1 ? 'start' : 'end')};
-
+  @media (max-width: 600px) {
+    justify-content:start;
+  }
   & > li {
     clip-path: polygon(
       0 0,
@@ -209,4 +219,7 @@ export const IconContainer = styled.div`
     props.id % 2 === 1 ? 'flex-start' : 'flex-end'};
   margin: ${(props) =>
     props.id % 2 === 1 ? '10px 0 0 10px' : '10px 10px 0 0'};
+      @media (max-width: 600px) {
+    justify-content:start;
+  }
 `;

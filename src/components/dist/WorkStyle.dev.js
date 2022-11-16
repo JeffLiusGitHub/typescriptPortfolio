@@ -12,7 +12,7 @@ var _border = _interopRequireDefault(require("../assets/border.png"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject12() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: ", ";\n  margin: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: ", ";\n  margin: ", ";\n      @media (max-width: 600px) {\n    justify-content:start;\n  }\n"]);
 
   _templateObject12 = function _templateObject12() {
     return data;
@@ -32,7 +32,7 @@ function _templateObject11() {
 }
 
 function _templateObject10() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  display: flex;\n  margin-top: 10px;\n  flex-wrap: wrap;\n  justify-content: ", ";\n\n  & > li {\n    clip-path: polygon(\n      0 0,\n      100% 0,\n      100% calc(100% - 7px),\n      calc(100% - 7px) 100%,\n      0 100%\n    );\n    background-color: rgba(92, 246, 255, 0.4);\n    margin: 2px;\n    color: white;\n    transition: all 0.2s ease-in-out;\n    font-size: 12px;\n  }\n  & > li:hover {\n    transform: scale(1.05);\n    box-shadow: -1px 7px 19px 10px rgba(89, 176, 194, 0.87);\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  display: flex;\n  margin-top: 10px;\n  flex-wrap: wrap;\n  justify-content: ", ";\n  @media (max-width: 600px) {\n    justify-content:start;\n  }\n  & > li {\n    clip-path: polygon(\n      0 0,\n      100% 0,\n      100% calc(100% - 7px),\n      calc(100% - 7px) 100%,\n      0 100%\n    );\n    background-color: rgba(92, 246, 255, 0.4);\n    margin: 2px;\n    color: white;\n    transition: all 0.2s ease-in-out;\n    font-size: 12px;\n  }\n  & > li:hover {\n    transform: scale(1.05);\n    box-shadow: -1px 7px 19px 10px rgba(89, 176, 194, 0.87);\n  }\n"]);
 
   _templateObject10 = function _templateObject10() {
     return data;
@@ -62,7 +62,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: center;\n  grid-column: 4 / 5;\n  grid-row: 1 / 2;\n  align-items: center;\n  transition-duration: 500ms;\n  :hover {\n    cursor: pointer;\n    transform: scale(1.1);\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: center;\n  grid-column: 4 / 5;\n  grid-row: 1 / 2;\n  align-items: center;\n  transition-duration: 500ms;\n  :hover {\n    cursor: pointer;\n    transform: scale(1.1);\n  }\n  @media (max-width: 600px) {\n    text-align: left;\n  }\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -82,7 +82,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  font-size: 2rem;\n  margin: 5px 0;\n  z-index: 10;\n  color: #eee;\n  grid-column: 1 / 6;\n  grid-row: 2 / 3;\n  position: relative;\n  border-bottom: 5px;\n \n"]);
+  var data = _taggedTemplateLiteral(["\n  font-size: 2rem;\n  margin: 5px 0;\n  z-index: 10;\n  color: #eee;\n  grid-column: 1 / 6;\n  grid-row: 2 / 3;\n  position: relative;\n  border-bottom: 5px;\n  @media (max-width: 600px) {\n    text-align: left;\n  }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -92,7 +92,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  color: #db2778;\n  font-family: monospace;\n  font-weight: bold;\n  font-size: 24px;\n  position:relative;\n  z-index: 1000;\n"]);
+  var data = _taggedTemplateLiteral(["\n  color: #db2778;\n  font-family: monospace;\n  font-weight: bold;\n  font-size: 24px;\n  position:relative;\n  z-index: 1000;\n  @media (max-width: 600px) {\n    text-align: left;\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
