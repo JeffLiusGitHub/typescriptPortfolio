@@ -1,4 +1,4 @@
-import React, { useRef, memo } from 'react';
+import React, { useState, useRef, memo } from 'react';
 import {
   BackgroundContainer,
   MainContractContainer,
@@ -13,12 +13,22 @@ import { Element } from 'react-scroll';
 import { contactDescription } from '../Data/Data';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import CustomizedSnackbars from '../components/CustomSnackbar';
+
 type Props = { textEnter: () => void; textLeave: () => void };
 
 const Contract = ({ textEnter, textLeave }: Props) => {
+  const [open, setOpen] = useState<boolean>(false);
   const contentRef = useRef<HTMLInputElement>(null);
   const isContentInView = useInView(contentRef);
   console.log('contract');
+
+  const openHandler = (): void => {
+    setOpen(true);
+  };
+  const closeHandler = (): void => {
+    setOpen(false);
+  };
 
   const animationStyle = {
     opacity: isContentInView ? 1 : 0,
@@ -46,7 +56,7 @@ const Contract = ({ textEnter, textLeave }: Props) => {
           <EmailContainer style={animationStyle}>
             <CopyToClipboard
               text="jeffliu2802@hotmail.com"
-              onCopy={() => alert('email copied!')}
+              onCopy={openHandler}
             >
               <span>
                 jeffliu2802@hotmail.com <ContentCopyIcon />
@@ -65,6 +75,7 @@ const Contract = ({ textEnter, textLeave }: Props) => {
             </a>
           </ButtonContainer>
         </MainContractContainer>
+        <CustomizedSnackbars open={open} closeHandler={closeHandler} />
       </BackgroundContainer>
     </Element>
   );
