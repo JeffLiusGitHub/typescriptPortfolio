@@ -11,6 +11,10 @@ var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
 var _avatar = _interopRequireDefault(require("../assets/avatar.jpg"));
 
+var _HomeBackground = _interopRequireDefault(require("../assets/HomeBackground.svg"));
+
+var _constellation = _interopRequireDefault(require("../assets/constellation.svg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
@@ -28,7 +32,7 @@ function _templateObject17() {
 }
 
 function _templateObject16() {
-  var data = _taggedTemplateLiteral(["\n  &,\n  &:after {\n    width: 150px;\n    height: 70px;\n    font-size: 1.5rem;\n    font-weight: 900;\n    background: linear-gradient(45deg, transparent 5%, rgb(219 39 119) 5%);\n    border: 0;\n    color: #fff;\n    letter-spacing: 3px;\n    box-shadow: 6px 0 0 #00e6f6;\n    position: relative;\n  }\n  &::after {\n    --slice-0: inset(50% 50% 50% 50%);\n    --slice-1: inset(80% -6px 0 0);\n    --slice-2: inset(50% -6px 30% 0);\n    --slice-3: inset(10% -6px 85% 0);\n    --slice-4: inset(40% -6px 43% 0);\n    --slice-5: inset(80% -6px 5% 0);\n    content: '';\n    display: block;\n    position: absolute;\n    left: 0;\n    top: 0;\n    background: linear-gradient(\n      45deg,\n      transparent 3%,\n      #00e6f6 3%,\n      #00e6f6 5%,\n      rgb(219 39 119)\n    );\n    text-shadow: -3px -3px 0 #f8f005, 3px 3px 0 #00e6f6;\n    clip-path: var(--slice-0);\n  }\n  &:hover::after {\n    animation: ", " 1s;\n    animation-timing-function: steps(2, end);\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  &,\n  &:after {\n    width: 170px;\n    height: 70px;\n    font-size: 1.5rem;\n    font-weight: 900;\n    background: linear-gradient(45deg, transparent 5%, rgb(219 39 119) 5%);\n    border: 0;\n    color: #fff;\n    letter-spacing: 3px;\n    box-shadow: 6px 0 0 #00e6f6;\n    position: relative;\n  }\n  &::after {\n    --slice-0: inset(50% 50% 50% 50%);\n    --slice-1: inset(80% -6px 0 0);\n    --slice-2: inset(50% -6px 30% 0);\n    --slice-3: inset(10% -6px 85% 0);\n    --slice-4: inset(40% -6px 43% 0);\n    --slice-5: inset(80% -6px 5% 0);\n    content: '';\n    display: block;\n    position: absolute;\n    left: 0;\n    top: 0;\n    background: linear-gradient(\n      45deg,\n      transparent 3%,\n      #00e6f6 3%,\n      #00e6f6 5%,\n      rgb(219 39 119)\n    );\n    text-shadow: -3px -3px 0 #f8f005, 3px 3px 0 #00e6f6;\n    clip-path: var(--slice-0);\n  }\n  &:hover::after {\n    animation: ", " 1s;\n    animation-timing-function: steps(2, end);\n  }\n"]);
 
   _templateObject16 = function _templateObject16() {
     return data;
@@ -108,7 +112,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = _taggedTemplateLiteral(["\n  font-size: 50px;\n  line-height: 2.5rem;\n  font-weight: 700;\n  color: rgb(136 146 176);\n"]);
+  var data = _taggedTemplateLiteral(["\n  font-size: 50px;\n  line-height: 2.5rem;\n  font-weight: 700;\n  color: rgb(136 146 176);\n  margin-bottom: 40px;\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -138,7 +142,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  width: 33%;\n  display: flex;\n  justify-content: center;\n  position: relative;\n  animation-duration: 800ms;\n  animation-timing-function: ease-in-out;\n  :hover {\n    transform: perspective(1500px) rotateY(340deg);\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 33%;\n  display: flex;\n  justify-content: center;\n  position: relative;\n  animation-duration: 800ms;\n  animation-timing-function: ease-in-out;\n  z-index: 1000;\n  :hover {\n    transform: perspective(1500px) rotateY(340deg);\n  }\n  @media (max-width: 1024px) {\n    display: none;\n  }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -158,7 +162,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 1200px;\n  display: flex;\n  margin: auto;\n  padding: 0 32px;\n  justify-content: center;\n  align-items: center;\n  height: 100%;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 1200px;\n  display: flex;\n  margin: auto;\n  min-height: 800px;\n  padding: 0 32px;\n  justify-content: center;\n  align-items: center;\n  height: 100%;\n  @media (max-width: 768px) {\n    padding: 0;\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -168,7 +172,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  background-color: #2a1f4f;\n  width: 100vw;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 1000;\n"]);
+  var data = _taggedTemplateLiteral(["\n  background: url(", ");\n\n  background-repeat: repeat;\n  background-size: auto;\n  background-position: center;\n  width: 100vw;\n  height: 100vh;\n  min-height: 800px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 1000;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -178,7 +182,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color: grey;\n  width: 100vw;\n  height: 100vh;\n  z-index: 1000;\n  position: relative;\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color: transparent;\n  width: 100vw;\n  height: 100vh;\n  min-height: 800px;\n  z-index: 1000;\n  position: relative;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -193,7 +197,7 @@ var DeepBackgroundContainer = _styledComponents["default"].div(_templateObject()
 
 exports.DeepBackgroundContainer = DeepBackgroundContainer;
 
-var BackgroundContainer = _styledComponents["default"].div(_templateObject2());
+var BackgroundContainer = _styledComponents["default"].div(_templateObject2(), _constellation["default"]);
 
 exports.BackgroundContainer = BackgroundContainer;
 

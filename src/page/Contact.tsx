@@ -11,6 +11,7 @@ import { CallToActionButton, BlinkerCursor } from './HomeStyle';
 import { useInView } from 'framer-motion';
 import { Element } from 'react-scroll';
 import { contactDescription } from '../Data/Data';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 type Props = { textEnter: () => void; textLeave: () => void };
 
@@ -47,10 +48,11 @@ const Contract = ({ textEnter, textLeave }: Props) => {
               text="jeffliu2802@hotmail.com"
               onCopy={() => alert('email copied!')}
             >
-              <span>jeffliu2802@hotmail.com</span>
+              <span>
+                jeffliu2802@hotmail.com <ContentCopyIcon />
+              </span>
             </CopyToClipboard>
           </EmailContainer>
-
           <ButtonContainer>
             <a
               href="mailto:jeffliu2802@hotmail.com"
@@ -58,7 +60,7 @@ const Contract = ({ textEnter, textLeave }: Props) => {
               rel="noopener noreferrer"
             >
               <CallToActionButton>
-                Contact<BlinkerCursor>_</BlinkerCursor>
+                Send Email<BlinkerCursor>_</BlinkerCursor>
               </CallToActionButton>
             </a>
           </ButtonContainer>

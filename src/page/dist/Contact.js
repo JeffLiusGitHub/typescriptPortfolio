@@ -6,6 +6,7 @@ var HomeStyle_1 = require("./HomeStyle");
 var framer_motion_1 = require("framer-motion");
 var react_scroll_1 = require("react-scroll");
 var Data_1 = require("../Data/Data");
+var ContentCopy_1 = require("@mui/icons-material/ContentCopy");
 var react_copy_to_clipboard_1 = require("react-copy-to-clipboard");
 var Contract = function (_a) {
     var textEnter = _a.textEnter, textLeave = _a.textLeave;
@@ -24,11 +25,13 @@ var Contract = function (_a) {
                 react_1["default"].createElement(ContactStyle_1.Content, { onMouseEnter: textEnter, onMouseLeave: textLeave, style: animationStyle }, Data_1.contactDescription),
                 react_1["default"].createElement(ContactStyle_1.EmailContainer, { style: animationStyle },
                     react_1["default"].createElement(react_copy_to_clipboard_1.CopyToClipboard, { text: "jeffliu2802@hotmail.com", onCopy: function () { return alert('email copied!'); } },
-                        react_1["default"].createElement("span", null, "jeffliu2802@hotmail.com"))),
+                        react_1["default"].createElement("span", null,
+                            "jeffliu2802@hotmail.com ",
+                            react_1["default"].createElement(ContentCopy_1["default"], null)))),
                 react_1["default"].createElement(ContactStyle_1.ButtonContainer, null,
                     react_1["default"].createElement("a", { href: "mailto:jeffliu2802@hotmail.com", target: "_blank", rel: "noopener noreferrer" },
                         react_1["default"].createElement(HomeStyle_1.CallToActionButton, null,
-                            "Contact",
+                            "Send Email",
                             react_1["default"].createElement(HomeStyle_1.BlinkerCursor, null, "_"))))))));
 };
 exports["default"] = react_1.memo(Contract);

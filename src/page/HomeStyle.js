@@ -233,7 +233,7 @@ const cursor = keyframes`
 export const CallToActionButton = styled.button`
   &,
   &:after {
-    width: 150px;
+    width: 170px;
     height: 70px;
     font-size: 1.5rem;
     font-weight: 900;
