@@ -29,7 +29,7 @@ export const Title = styled.p`
   border-color: rgb(219 39 119);
 `;
 export const Content = styled.div`
-  margin-top: 120px;
+  margin-top: 100px;
   font-size: 1rem;
   line-height: 2.5rem;
   font-weight: 700;
@@ -39,7 +39,7 @@ export const Content = styled.div`
 `;
 
 export const EmailContainer = styled.div`
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 1.5rem;
   line-height: 2.5rem;
   font-weight: 700;
