@@ -22,7 +22,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  margin-top: 40px;\n  font-size: 1.5rem;\n  line-height: 2.5rem;\n  font-weight: 700;\n  max-width: 800px;\n  position: relative;\n    display: inline;\n  /* display: block; */\n  /* text-align: left; */\n  cursor: pointer;\n  &::after {\n    position: absolute;\n    right: 0;\n    content: ' ';\n    width: 100%;\n    height: 4px;\n    background: rgb(219 39 119);\n    bottom: -8px;\n    transform: scale(0, 1);\n    transition: transform 0.3s;\n    transform-origin: left top;\n  }\n  &:hover::after {\n    transform: scale(1, 1);\n  }\n  &:active::after {\n    transform: scale(1, 1);\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin-top: 40px;\n  font-size: 1.5rem;\n  line-height: 2.5rem;\n  font-weight: 700;\n  max-width: 800px;\n  position: relative;\n  display: inline;\n  /* display: block; */\n  /* text-align: left; */\n  cursor: pointer;\n  :hover {\n    color: #ed5788;\n    text-shadow: 0 0 30px #ff296d, 0 0 40px #ff296d, 0 0 50px #ff296d,\n      0 0 60px #ff296d, 0 0 70px #ff296d;\n  }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
