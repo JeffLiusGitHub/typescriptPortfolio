@@ -1,19 +1,8 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import _debounce from 'lodash/debounce';
 const useMouse = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState<string>('default');
-  const mouseMove = useCallback(
-    (event: MouseEvent) =>
-      setMousePosition({ x: event.clientX, y: event.clientY }),
-    [event],
-  );
-  useEffect(() => {
-    window.addEventListener('mousemove', mouseMove);
-    return () => {
-      window.removeEventListener('mousemove', mouseMove);
-    };
-  }, []);
 
   const variants: any = {
     default: {
@@ -30,9 +19,29 @@ const useMouse = () => {
       borderRadius: '50%',
     },
   };
+  const debouncedMouseMove = useMemo(
+    () =>
+      _debounce((event: MouseEvent) => {
+        setMousePosition({ x: event.clientX, y: event.clientY });
+      }, 10),
+    [setMousePosition],
+  );
 
-  const textEnter = useCallback(() => setCursorVariant('text'), []);
-  const textLeave = useCallback(() => setCursorVariant('default'), []);
+  useEffect(() => {
+    window.addEventListener('mousemove', debouncedMouseMove);
+    return () => {
+      window.removeEventListener('mousemove', debouncedMouseMove);
+    };
+  }, [debouncedMouseMove]);
+
+  const textEnter = useCallback(
+    () => setCursorVariant('text'),
+    [setCursorVariant],
+  );
+  const textLeave = useCallback(
+    () => setCursorVariant('default'),
+    [setCursorVariant],
+  );
 
   return {
     mousePosition,

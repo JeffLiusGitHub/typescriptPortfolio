@@ -1,18 +1,10 @@
 "use strict";
 exports.__esModule = true;
 var react_1 = require("react");
+var debounce_1 = require("lodash/debounce");
 var useMouse = function () {
     var _a = react_1.useState({ x: 0, y: 0 }), mousePosition = _a[0], setMousePosition = _a[1];
     var _b = react_1.useState('default'), cursorVariant = _b[0], setCursorVariant = _b[1];
-    var mouseMove = react_1.useCallback(function (event) {
-        return setMousePosition({ x: event.clientX, y: event.clientY });
-    }, [event]);
-    react_1.useEffect(function () {
-        window.addEventListener('mousemove', mouseMove);
-        return function () {
-            window.removeEventListener('mousemove', mouseMove);
-        };
-    }, []);
     var variants = {
         "default": {
             x: mousePosition.x - 16,
@@ -28,8 +20,19 @@ var useMouse = function () {
             borderRadius: '50%'
         }
     };
-    var textEnter = react_1.useCallback(function () { return setCursorVariant('text'); }, []);
-    var textLeave = react_1.useCallback(function () { return setCursorVariant('default'); }, []);
+    var debouncedMouseMove = react_1.useMemo(function () {
+        return debounce_1["default"](function (event) {
+            setMousePosition({ x: event.clientX, y: event.clientY });
+        }, 10);
+    }, [setMousePosition]);
+    react_1.useEffect(function () {
+        window.addEventListener('mousemove', debouncedMouseMove);
+        return function () {
+            window.removeEventListener('mousemove', debouncedMouseMove);
+        };
+    }, [debouncedMouseMove]);
+    var textEnter = react_1.useCallback(function () { return setCursorVariant('text'); }, [setCursorVariant]);
+    var textLeave = react_1.useCallback(function () { return setCursorVariant('default'); }, [setCursorVariant]);
     return {
         mousePosition: mousePosition,
         cursorVariant: cursorVariant,

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
@@ -7,7 +7,8 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import { LeftFly } from '../page/TimeLineAnimation';
-import { useInView } from 'react-intersection-observer';
+// import { useInView } from 'react-intersection-observer';
+import { useInView } from 'framer-motion';
 type Props = {
   align?: string;
   date?: string;
@@ -46,7 +47,10 @@ const TimeLineContent = ({
 
   const timeLineDotStyle = { backgroundColor: '#517693', fontSize: '3px' };
 
-  const { ref: leftRef, inView: leftIsVisable } = useInView();
+  const contentRef = useRef<HTMLInputElement>(null);
+ 
+  const isContentInView = useInView(contentRef);
+  // const { ref: leftRef, inView: leftIsVisable } = useInView();
   return (
     <TimelineItem>
       <TimelineOppositeContent
@@ -63,7 +67,7 @@ const TimeLineContent = ({
         <TimelineConnector sx={timeLineConnectorStyle} />
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }}>
-        <LeftFly isAnimated={leftIsVisable} ref={leftRef}>
+        <LeftFly isAnimated={isContentInView} ref={contentRef}>
           <Typography variant="h6" component="span" sx={titleStyle}>
             {title}
           </Typography>
