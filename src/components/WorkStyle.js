@@ -37,7 +37,7 @@ export const ProjectLabel = styled.div`
   font-family: monospace;
   font-weight: bold;
   font-size: 24px;
-  position:relative;
+  position: relative;
   z-index: 1000;
   @media (max-width: 600px) {
     text-align: left;
@@ -123,7 +123,7 @@ export const SkillContainer = styled.ul`
   flex-wrap: wrap;
   justify-content: ${(props) => (props.id % 2 === 1 ? 'start' : 'end')};
   @media (max-width: 600px) {
-    justify-content:start;
+    justify-content: start;
   }
   & > li {
     clip-path: polygon(
@@ -141,6 +141,7 @@ export const SkillContainer = styled.ul`
   }
   & > li:hover {
     transform: scale(1.05);
+    background-color: rgba(123, 158, 210, 0.4);
     box-shadow: -1px 7px 19px 10px rgba(89, 176, 194, 0.87);
   }
 `;
@@ -219,7 +220,7 @@ export const IconContainer = styled.div`
     props.id % 2 === 1 ? 'flex-start' : 'flex-end'};
   margin: ${(props) =>
     props.id % 2 === 1 ? '10px 0 0 10px' : '10px 10px 0 0'};
-      @media (max-width: 600px) {
-    justify-content:start;
+  @media (max-width: 600px) {
+    justify-content: start;
   }
 `;
