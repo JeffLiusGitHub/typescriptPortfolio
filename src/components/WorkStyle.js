@@ -176,7 +176,11 @@ export const ProjectImg = styled.div`
     right: 0;
     bottom: 0;
     z-index: 1;
-    background: linear-gradient(0.4turn, #09321a, #db2978);
+    background: linear-gradient(
+      180deg,
+      rgba(28, 29, 31, 0) 30%,
+      rgba(28, 29, 31, 0.9) 100%
+    );
     filter: grayscale(60%) contrast(0.5);
     mix-blend-mode: screen;
     border-radius: 2px;
@@ -199,7 +203,7 @@ export const ProjectImg = styled.div`
     mix-blend-mode: multiply;
     z-index: 1000;
     :hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
       @media (max-width: 600px) {
         transform: scale(1);
       }
