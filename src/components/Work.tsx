@@ -21,8 +21,8 @@ type Props = {
   title: string;
   category: string;
   technology: string[];
-  gitUrl: string;
-  link: string;
+  gitUrl?: string;
+  link?: string;
   desc: string;
 };
 
@@ -54,21 +54,25 @@ const Work = ({
               </SkillContainer>
             </div>
             <IconContainer id={id}>
-              <GitIconContainer
-                href={gitUrl}
-                target="_blank"
-                style={{ marginRight: '35px' }}
-                rel="noopener noreferrer"
-              >
-                <BsGithub size={25} />
-              </GitIconContainer>
-              <LinkIconContainer
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiOutlineLink size={25} />
-              </LinkIconContainer>
+              {gitUrl && (
+                <GitIconContainer
+                  href={gitUrl}
+                  target="_blank"
+                  style={{ marginRight: '35px' }}
+                  rel="noopener noreferrer"
+                >
+                  <BsGithub size={25} />
+                </GitIconContainer>
+              )}
+              {link && (
+                <LinkIconContainer
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiOutlineLink size={25} />
+                </LinkIconContainer>
+              )}
             </IconContainer>
           </ProjectDetails>
         </ProjectContent>

@@ -248,6 +248,23 @@ export const workArray = [
     link: 'https://portfolio-add7c.web.app/',
     desc: 'A self-introduction website with sections such as introduction, experience and work. Enhance the user experience by using proper animation.',
   },
+  {
+    id: 8,
+    img: 'UberClone',
+    title: 'React Native Uber Clone',
+    category: 'React Native app',
+    technology: [
+      'ReactNative',
+      'Expo',
+      'tailwind css',
+      'Redux',
+      'Google PLaces API',
+      'Google Directions API',
+      'Google Distance Matrix API',
+    ],
+    gitUrl: 'https://github.com/JeffLiusGitHub/ReactNativeUber',
+    desc: 'A mobile app clone of Uber that allows users to search origin and destination locations by typing keywords, as well as automate geolocation searches using the GooglePlaceAutoComplete API, navigate pages, mark locations on maps, get route directions, and calculate distance, estimate travel time and fee.',
+  },
 ];
 
 export const contactDescription =
