@@ -250,7 +250,7 @@ export const workArray = [
   },
   {
     id: 8,
-    img: 'UberClone',
+    img: 'uberClone',
     title: 'React Native Uber Clone',
     category: 'React Native app',
     technology: [
@@ -264,6 +264,44 @@ export const workArray = [
     ],
     gitUrl: 'https://github.com/JeffLiusGitHub/ReactNativeUber',
     desc: 'A mobile app clone of Uber that allows users to search origin and destination locations by typing keywords, as well as automate geolocation searches using the GooglePlaceAutoComplete API, navigate pages, mark locations on maps, get route directions, and calculate distance, estimate travel time and fee.',
+  },
+  {
+    id: 9,
+    img: 'microfrontend',
+    title: 'React Vue microfrontend Demo',
+    category: 'MICROFRONTEND WEBSITE',
+    technology: [
+      'React',
+      'MaterialUI',
+      'Vue',
+      'webpack',
+      'ModuleFederationPlugin',
+      'HtmlWebpackPlugin',
+      'Github Action',
+      'AWS S3',
+      'Amazon CloudFront',
+    ],
+    gitUrl: 'https://github.com/JeffLiusGitHub/Microfrontend_react_vue_S3',
+    link: 'https://d3uv50zavr0skp.cloudfront.net/',
+    desc: 'A Microfrontend application that combines React and Vue pages using W ebpack. Solutions have been implemented to address issues such as style conflicts, navigation, authentication, and automatic deployment on AWS S3 by using GitHub Action.',
+  },
+  {
+    id: 10,
+    img: 'microservice',
+    title: 'React node microservice Demo',
+    category: 'MICROSERVICE WEBSITE',
+    technology: [
+      'React',
+      'node',
+      'axios',
+      'cors',
+      'nodemon',
+      'docker',
+      'event-bus',
+    ],
+    gitUrl: 'https://github.com/JeffLiusGitHub/microservice-demo-server-client-',
+
+    desc: 'A microservice application that implements the post and comment functions, as well as rejecting comments with specific words. Microservices concept is used to build a post, comments, query, and moderation service separately. Event-bus is used to connect the servers and save the data. When some servers are broken, event-bus can send the data once the servers are re-started.',
   },
 ];
 

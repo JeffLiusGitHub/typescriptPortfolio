@@ -77,7 +77,7 @@ const Work = ({
           </ProjectDetails>
         </ProjectContent>
         <ProjectImg id={id}>
-          <img src={`/work/${img}.png`} alt={title} />
+          <img src={`/work/${img}.png`} alt={`${title} screenshot`} />
         </ProjectImg>
       </Project>
     </ProjectContainer>
