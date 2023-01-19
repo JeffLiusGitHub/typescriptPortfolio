@@ -314,4 +314,4 @@ export const workArray = [
 ];
 
 export const contactDescription =
-  'Feel free to contact me if you are interested in my work, skills or would like to speak with me. You can find my linkedin, github, email and resume by clicking the link below. Let`s keep in touch!';
+  'Feel free to contact me if you are interested in my work, skills or would like to speak with me. You can find my Linkedin, Github, Email and resume by clicking the link below. Let`s keep in touch!';
