@@ -22,6 +22,6 @@ var Work = function (_a) {
                         link && (react_1["default"].createElement(WorkStyle_1.LinkIconContainer, { href: link, target: "_blank", rel: "noopener noreferrer" },
                             react_1["default"].createElement(ai_1.AiOutlineLink, { size: 25 })))))),
             react_1["default"].createElement(WorkStyle_1.ProjectImg, { id: id },
-                react_1["default"].createElement("img", { src: "/work/" + img + ".png", alt: title + " screenshot" })))));
+                react_1["default"].createElement("img", { src: "/work/" + img + "-min.png", alt: title + " screenshot" })))));
 };
 exports["default"] = Work;
