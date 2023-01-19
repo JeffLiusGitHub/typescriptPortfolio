@@ -1,0 +1,23 @@
+name: page-deploy
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'src/**'
+
+defaults:
+  run:
+    working-directory: src/
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run build
+      - run: firebase deploy

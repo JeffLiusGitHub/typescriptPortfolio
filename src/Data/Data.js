@@ -268,10 +268,12 @@ export const workArray = [
   {
     id: 9,
     img: 'microfrontend',
-    title: 'React Vue microfrontend Demo',
+    title: 'React Vue Demo',
     category: 'MICROFRONTEND WEBSITE',
     technology: [
       'React',
+      'lazyLoading',
+      'react-router-dom',
       'MaterialUI',
       'Vue',
       'webpack',
@@ -288,20 +290,26 @@ export const workArray = [
   {
     id: 10,
     img: 'microservice',
-    title: 'React node microservice Demo',
+    title: 'React node Demo',
     category: 'MICROSERVICE WEBSITE',
     technology: [
       'React',
+      'bootstrap',
       'node',
       'axios',
       'cors',
       'nodemon',
-      'docker',
       'event-bus',
+      'docker',
+      'Kubernete',
+      'load balance',
+      'Ingress-Nginx',
+      'skaffold',
     ],
-    gitUrl: 'https://github.com/JeffLiusGitHub/microservice-demo-server-client-',
+    gitUrl:
+      'https://github.com/JeffLiusGitHub/microservice-demo-server-client-',
 
-    desc: 'A microservice application that implements the post and comment functions, as well as rejecting comments with specific words. Microservices concept is used to build a post, comments, query, and moderation service separately. Event-bus is used to connect the servers and save the data. When some servers are broken, event-bus can send the data once the servers are re-started.',
+    desc: 'A microservice application that implements the post and comment functions, as well as rejecting comments with specific words. Microservices concept is used to build a post, comments, query, and moderation service separately. Event-bus is used to connect the servers and save the data. When some servers are broken, event-bus can send the data once the servers are re-started. Using docker to create the image and Kubernete to run the container.',
   },
 ];
 
