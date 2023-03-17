@@ -62,7 +62,7 @@ export const outerLinkArray = [
 ];
 
 export const homeDescription =
-  'As a passionate developer, I switched my career from an aircraft engineer to a full-stack developer. I have experience working with React, Typescript, Redux, Styled-Component, React Testing Library, Restful Api, Material UI, github and Node JS. You can directly view my work or browsing my past experience.';
+  'As a passionate developer, I switched my career from an aircraft engineer to a full-stack developer. I have experience working with React, Typescript, Redux, Styled-Component, React Testing Library, Restful Api, Material UI, github, Node JS, CI/CD and AWS. You can directly view my work or browsing my past experience.';
 
 export const aboutPrimaryContent =
   'Hi. I`m Jeff, nice to meet you. Please take a look around.';
@@ -149,6 +149,7 @@ export const workArray = [
       'mongoDB',
       'heroku',
       'stripe',
+      'sendGrid',
     ],
     gitUrl: 'https://github.com/JeffLiusGitHub/shoppingDemo',
     link: 'https://iconic-shopping.web.app/',
@@ -199,6 +200,7 @@ export const workArray = [
       'axios',
       'firebase',
       'heroku',
+      'Openai API'
     ],
     gitUrl: 'https://github.com/JeffLiusGitHub/chatting-app',
     link: 'https://chat-462f6.web.app/',

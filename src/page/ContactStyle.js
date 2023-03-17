@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import wave from '../assets/wave.svg';
 export const BackgroundContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   background-color: #061d3d;
   color: rgb(209 213 219);
   z-index: 1;

@@ -182,7 +182,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color: transparent;\n  width: 100vw;\n  height: 100vh;\n  min-height: 800px;\n  z-index: 1000;\n  position: relative;\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color: transparent;\n  width: 100vw;\n  height: 100svh;\n  min-height: 800px;\n  z-index: 1000;\n  position: relative;\n"]);
 
   _templateObject = function _templateObject() {
     return data;

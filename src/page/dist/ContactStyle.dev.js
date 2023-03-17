@@ -62,7 +62,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  width: 100vw;\n  height: 100vh;\n  background-color: #061d3d;\n  color: rgb(209 213 219);\n  z-index: 1;\n  position: static;\n  min-height: 600px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100vw;\n  height: 100svh;\n  background-color: #061d3d;\n  color: rgb(209 213 219);\n  z-index: 1;\n  position: static;\n  min-height: 600px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;

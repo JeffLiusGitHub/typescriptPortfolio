@@ -6,7 +6,7 @@ import constellation from '../assets/constellation.svg';
 export const DeepBackgroundContainer = styled.div`
   background-color: transparent;
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   min-height: 800px;
   z-index: 1000;
   position: relative;
