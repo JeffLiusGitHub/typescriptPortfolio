@@ -130,6 +130,25 @@ export const timeLineArray = [
 
 export const workArray = [
   {
+    id: 0,
+    img: 'openpay',
+    title: 'Openpay Customer Platform',
+    category: 'FINTECH WEBSITE',
+    technology: [
+      'React',
+      'Styled-component',
+      'Material UI',
+      'StoryBook',
+      'formik',
+      'yup',
+      'axios',
+      'carousel.js',
+      'Azure',
+    ],
+    link: 'https://my.openpay.com.au/',
+    desc: 'Openpay platform includes registration and login features, with flexible repayment options for users. The platform allows for easy account setup and management. Additionally, the platform provides users with tools to manage their repayment schedules and track their transaction history.',
+  },
+  {
     id: 1,
     img: 'Iconic',
     title: 'Iconic Demo',
@@ -200,7 +219,7 @@ export const workArray = [
       'axios',
       'firebase',
       'heroku',
-      'Openai API'
+      'Openai API',
     ],
     gitUrl: 'https://github.com/JeffLiusGitHub/chatting-app',
     link: 'https://chat-462f6.web.app/',

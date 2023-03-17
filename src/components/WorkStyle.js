@@ -150,7 +150,8 @@ export const ProjectImg = styled.div`
   position: relative;
   border-radius: 5px;
   z-index: 0;
-  height: auto;
+  width: 100%;
+  height: 100%;
   animation: all 0.5 ease-in-out;
   border-radius: 2px;
   grid-row: 1 / -1;
@@ -202,6 +203,9 @@ export const ProjectImg = styled.div`
     position: relative;
     mix-blend-mode: multiply;
     z-index: 1000;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     :hover {
       transform: scale(1.05);
       @media (max-width: 600px) {
