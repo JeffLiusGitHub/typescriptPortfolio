@@ -206,7 +206,7 @@ export const workArray = [
     id: 4,
     img: 'chat',
     title: 'Real-time chat App',
-    category: 'CHAT APP',
+    category: 'CHAT APP & OPENAI',
     technology: [
       'React',
       'Redux',
@@ -223,7 +223,7 @@ export const workArray = [
     ],
     gitUrl: 'https://github.com/JeffLiusGitHub/chatting-app',
     link: 'https://chat-462f6.web.app/',
-    desc: 'A web chat app supports multiple users chatting on the same screen. Support emoticons. Have fun chatting with your friends right now!',
+    desc: 'A web chat app supports multiple users chatting on the same screen. Support emoticons. Have fun chatting with your friends right now! New feature, click blue button to chat with OpenAI!',
   },
   {
     id: 5,
