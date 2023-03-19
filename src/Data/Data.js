@@ -334,7 +334,7 @@ export const workArray = [
   },
   {
     id: 11,
-    img: 'inventory',
+    img: 'Inventory',
     title: 'React table Demo',
     category: 'INVENTORY MANAGEMENT',
     technology: [
