@@ -332,6 +332,22 @@ export const workArray = [
 
     desc: 'A microservice application that implements the post and comment functions, as well as rejecting comments with specific words. Microservices concept is used to build a post, comments, query, and moderation service separately. Event-bus is used to connect the servers and save the data. When some servers are broken, event-bus can send the data once the servers are re-started. Using docker to create the image and Kubernete to run the container.',
   },
+  {
+    id: 11,
+    img: 'inventory',
+    title: 'React table Demo',
+    category: 'INVENTORY MANAGEMENT',
+    technology: [
+      'React',
+      'react-table',
+      'styled-component',
+      'material UI',
+      'axios',
+    ],
+    gitUrl: 'https://github.com/JeffLiusGitHub/Inventory',
+    link: 'https://main.dzx14kjbg48zl.amplifyapp.com/',
+    desc: 'A website for e-commerce inventory management can access API data, display sub-data, and enable inline editing. Data is sotred locally, so data will not be lost during a refresh.',
+  },
 ];
 
 export const contactDescription =
