@@ -343,10 +343,11 @@ export const workArray = [
       'styled-component',
       'material UI',
       'axios',
+      'AWS amplify',
     ],
     gitUrl: 'https://github.com/JeffLiusGitHub/Inventory',
     link: 'https://main.dzx14kjbg48zl.amplifyapp.com/',
-    desc: 'A website for e-commerce inventory management can access API data, display sub-data, and enable inline editing. Data is sotred locally, so data will not be lost during a refresh.',
+    desc: 'A website for e-commerce inventory management can access API data, display sub-data, and enable inline editing. Data is stored locally, so data will not be lost during a refresh.',
   },
 ];
 
