@@ -7,8 +7,6 @@ exports.IconContainer = exports.ProjectImg = exports.SkillContainer = exports.Pr
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
-var _border = _interopRequireDefault(require("../assets/border.png"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject12() {
@@ -181,7 +179,7 @@ exports.SkillContainer = SkillContainer;
 
 var ProjectImg = _styledComponents["default"].div(_templateObject11(), function (props) {
   return props.id % 2 === 1 ? '6 / -1' : ' 1 / 7';
-}, _border["default"]);
+}, borderImg);
 
 exports.ProjectImg = ProjectImg;
 
