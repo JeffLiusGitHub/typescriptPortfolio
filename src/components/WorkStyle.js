@@ -192,12 +192,6 @@ export const ProjectImg = styled.div`
     outline: 0px;
   }
   & > img {
-    /* animation: all 1 ease-in-out; */
-    /* border-image-source: url(${borderImg});
-  border-image-slice: 25 36 18 68;
-  border-image-width: 7px 7px 7px 7px;
-  border-image-outset: 0px 0px 0px 0px;
-  border-image-repeat: stretch stretch; */
     transition: all 0.3s ease-in-out;
     border-radius: 2px;
     position: relative;

@@ -20,7 +20,7 @@ function _templateObject12() {
 }
 
 function _templateObject11() {
-  var data = _taggedTemplateLiteral(["\n  position: relative;\n  border-radius: 5px;\n  z-index: 0;\n  width: 100%;\n  height: 100%;\n  animation: all 0.5 ease-in-out;\n  border-radius: 2px;\n  grid-row: 1 / -1;\n  grid-column: ", ";\n  border-radius: 10px;\n\n  @media screen and (max-width: 768px) {\n    height: 100%;\n  }\n  @media (max-width: 600px) {\n    grid-column: 1 / -1;\n    opacity: 0.25;\n  }\n\n  &:before {\n    content: '';\n    position: absolute;\n    border-radius: 5px;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    z-index: 1;\n    background: linear-gradient(\n      180deg,\n      rgba(28, 29, 31, 0) 30%,\n      rgba(28, 29, 31, 0.9) 100%\n    );\n    filter: grayscale(60%) contrast(0.5);\n    mix-blend-mode: screen;\n    border-radius: 2px;\n  }\n  &:hover:before {\n    mix-blend-mode: normal;\n    background: transparent;\n    outline: 0px;\n  }\n  & > img {\n    /* animation: all 1 ease-in-out; */\n    /* border-image-source: url(", ");\n  border-image-slice: 25 36 18 68;\n  border-image-width: 7px 7px 7px 7px;\n  border-image-outset: 0px 0px 0px 0px;\n  border-image-repeat: stretch stretch; */\n    transition: all 0.3s ease-in-out;\n    border-radius: 2px;\n    position: relative;\n    mix-blend-mode: multiply;\n    z-index: 1000;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    :hover {\n      transform: scale(1.05);\n      @media (max-width: 600px) {\n        transform: scale(1);\n      }\n    }\n    @media screen and (max-width: 768px) {\n      object-fit: cover;\n      width: auto;\n      height: 100%;\n      max-height: 430px;\n      transform: scale(1);\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: relative;\n  border-radius: 5px;\n  z-index: 0;\n  width: 100%;\n  height: 100%;\n  animation: all 0.5 ease-in-out;\n  border-radius: 2px;\n  grid-row: 1 / -1;\n  grid-column: ", ";\n  border-radius: 10px;\n\n  @media screen and (max-width: 768px) {\n    height: 100%;\n  }\n  @media (max-width: 600px) {\n    grid-column: 1 / -1;\n    opacity: 0.25;\n  }\n\n  &:before {\n    content: '';\n    position: absolute;\n    border-radius: 5px;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    z-index: 1;\n    background: linear-gradient(\n      180deg,\n      rgba(28, 29, 31, 0) 30%,\n      rgba(28, 29, 31, 0.9) 100%\n    );\n    filter: grayscale(60%) contrast(0.5);\n    mix-blend-mode: screen;\n    border-radius: 2px;\n  }\n  &:hover:before {\n    mix-blend-mode: normal;\n    background: transparent;\n    outline: 0px;\n  }\n  & > img {\n    transition: all 0.3s ease-in-out;\n    border-radius: 2px;\n    position: relative;\n    mix-blend-mode: multiply;\n    z-index: 1000;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    :hover {\n      transform: scale(1.05);\n      @media (max-width: 600px) {\n        transform: scale(1);\n      }\n    }\n    @media screen and (max-width: 768px) {\n      object-fit: cover;\n      width: auto;\n      height: 100%;\n      max-height: 430px;\n      transform: scale(1);\n    }\n  }\n"]);
 
   _templateObject11 = function _templateObject11() {
     return data;
@@ -179,7 +179,7 @@ exports.SkillContainer = SkillContainer;
 
 var ProjectImg = _styledComponents["default"].div(_templateObject11(), function (props) {
   return props.id % 2 === 1 ? '6 / -1' : ' 1 / 7';
-}, borderImg);
+});
 
 exports.ProjectImg = ProjectImg;
 
