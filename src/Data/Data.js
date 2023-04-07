@@ -349,6 +349,23 @@ export const workArray = [
     link: 'https://main.dzx14kjbg48zl.amplifyapp.com/',
     desc: 'A website for e-commerce inventory management can access API data, display sub-data, and enable inline editing. Data is stored locally, so data will not be lost during a refresh.',
   },
+  {
+    id: 12,
+    img: 'blog',
+    title: 'Next Blog',
+    category: 'NEXT JS BLOG',
+    technology: [
+      'Next Js',
+      'react-markdown',
+      'react-syntax-highlighter',
+      'mongodb',
+      'gray-matter',
+      'Vercel',
+    ],
+    gitUrl: 'https://github.com/JeffLiusGitHub/nextblog',
+    link: 'https://nextblog-eight.vercel.app/',
+    desc: 'This blog website is built using Next.js and covers key front-end technical concepts with optimized static pages for fast loading and image optimization techniques for optimal image quality. Users can learn about front-end technologies at their own pace.Moreover, the website leverages MongoDB to generate a contact form, enabling users to reach out and connect with the website owner.Explore the blogs various topics and engage with the content in a seamless and user-friendly manner. ',
+  },
 ];
 
 export const contactDescription =
