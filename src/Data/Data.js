@@ -273,7 +273,7 @@ export const workArray = [
     id: 8,
     img: 'uberClone',
     title: 'React Native Uber Clone',
-    category: 'React Native app',
+    category: 'REACT NATIVE APP',
     technology: [
       'ReactNative',
       'Expo',
@@ -365,6 +365,16 @@ export const workArray = [
     gitUrl: 'https://github.com/JeffLiusGitHub/nextblog',
     link: 'https://nextblog-eight.vercel.app/',
     desc: 'This blog website is built using Next.js and covers key front-end technical concepts with optimized static pages for fast loading and image optimization techniques for optimal image quality. Users can learn about front-end technologies at their own pace.Moreover, the website leverages MongoDB to generate a contact form, enabling users to reach out and connect with the website owner.Explore the blogs various topics and engage with the content in a seamless and user-friendly manner. ',
+  },
+  {
+    id: 13,
+    img: 'newslanding',
+    title: 'Grid Layout demo',
+    category: 'NEWS LANDING PAGE',
+    technology: ['react', 'grid', 'typescript', 'styled-components'],
+    gitUrl: 'https://github.com/JeffLiusGitHub/news-code-challenge',
+    link: 'https://news-11475.web.app/',
+    desc: ' news landing page mimics The West Australian news landing page by utilizing Grid to achieve a responsive design. The website is able to retrieve dynamic news data and render it in an appropriate manner. This code challenge built with React and TypeScript, and configured with ESLint to enforce code formatting conventions. ',
   },
 ];
 
