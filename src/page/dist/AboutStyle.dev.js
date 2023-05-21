@@ -112,7 +112,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 100svh;\n  background-color: rgb(10 25 47);\n  color: rgb(209 213 219);\n  z-index: 1;\n  position: static;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 100svh;\n  background-color: rgb(10 25 47);\n  color: rgb(209 213 219);\n  z-index: 1;\n  position: static;\n  scroll-snap-align: start;\n"]);
 
   _templateObject = function _templateObject() {
     return data;

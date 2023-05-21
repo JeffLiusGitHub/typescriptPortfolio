@@ -8,6 +8,7 @@ export const WorkContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  scroll-snap-align: start;
 `;
 
 export const HeaderContainer = styled.div`

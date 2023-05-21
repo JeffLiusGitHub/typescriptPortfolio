@@ -43,6 +43,7 @@ const TimeLine = (props: Props) => {
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
+            scrollSnapAlign: 'start',
           }}
         >
           <TimelineMainTitle

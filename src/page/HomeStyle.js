@@ -10,6 +10,7 @@ export const DeepBackgroundContainer = styled.div`
   min-height: 800px;
   z-index: 1000;
   position: relative;
+  scroll-snap-align: start;
 `;
 
 export const BackgroundContainer = styled.div`

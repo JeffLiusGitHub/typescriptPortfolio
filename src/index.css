@@ -48,5 +48,6 @@
   font-weight: 500;
   font-size: 100px;
 }
+html{scroll-snap-type: y mandatory;scroll-padding-top: 80px;}
 
 /* delete */
