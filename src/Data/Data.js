@@ -176,8 +176,8 @@ export const workArray = [
   },
   {
     id: 2,
-    img: 'ToyRobot',
-    title: 'Toy Robot Simulator',
+    img: 'pacman',
+    title: 'Pacman Simulator',
     category: 'WEBSITE GAME',
     technology: [
       'React',
@@ -187,9 +187,9 @@ export const workArray = [
       'firebase',
       'react testing library',
     ],
-    gitUrl: 'https://github.com/JeffLiusGitHub/toy-robot',
-    link: 'https://toy-robot-simulator-69acb.web.app/',
-    desc: 'A game application to manipulate the turtle`s movement, turn left, turn right, place the turtle, and report its current coordinates. It will indicate if the user attempts a wrong move like moving a turtle before it`s placed, or moving it out of the table. ',
+    gitUrl: 'https://github.com/JeffLiusGitHub/pacman',
+    link: 'https://pacman-4aed0.web.app/',
+    desc: 'A game application to manipulate the Pacman`s movement, turn left, turn right, place the Pacman, and report its current coordinates. It will indicate if the user attempts a wrong move like moving a turtle before it`s placed, or moving it out of the table. ',
   },
   {
     id: 3,
