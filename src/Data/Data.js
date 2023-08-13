@@ -126,6 +126,24 @@ export const timeLineArray = [
     subContent: 'Frontend Developer--',
     children: <LaptopMacIcon />,
   },
+  {
+    id: 7,
+    align: 'left',
+    date: 'Apr 2023 – June 2023',
+    title: 'Experience',
+    mainContent: '❖ Andisor (Australia)',
+    subContent: '--Software Engineer',
+    children: <LaptopMacIcon />,
+  },
+  {
+    id: 8,
+    align: 'left',
+    date: 'Apr 2023 – now',
+    title: 'Experience',
+    mainContent: '❖ (i.e.,) (Australia)',
+    subContent: 'Software Engineer--',
+    children: <LaptopMacIcon />,
+  },
 ];
 
 export const workArray = [
