@@ -1,53 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 @layer base {
-  body {
-    @apply font-[VT323];
-  }
-  li {
-    @apply px-4;
-    @apply cursor-pointer;
-  }
+    body {
+        @apply font-[VT323];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+    }
 }
 
 * {
-  cursor: none;
+    cursor: none;
 }
+
 .a {
-  cursor: none;
+    cursor: none;
 }
 
 .cursor {
-  background-color: #84868a2f;
-  height: 32px;
-  width: 32px;
-  border: 5px solid #5cf6ff;
-  transition: all 0.1s ease-out;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000000;
-  pointer-events: none;
+    background-color: #84868a2f;
+    height: 32px;
+    width: 32px;
+    border: 5px solid #5cf6ff;
+    transition: all 0.2s ease-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    pointer-events: none;
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
 }
+
+.cursor--text {
+    height: 150px;
+    width: 150px;
+    background-color: #88B1E9;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
 .cursor::after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5px;
-  width: 10px;
-  background-color: #5cf6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5px;
+    width: 10px;
+    background-color: #5cf6ff;
 }
 
 .MuiTypography-root {
-  color: pink;
-  font-weight: 500;
-  font-size: 100px;
+    color: pink;
+    font-weight: 500;
+    font-size: 100px;
 }
-html{scroll-snap-type: y mandatory;scroll-padding-top: 80px;}
 
-/* delete */
+html {
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 80px;
+}
